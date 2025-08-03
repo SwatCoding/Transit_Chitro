@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kolkata Tram Depot Map - Transit Chitro</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/lightbox.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+  <style>
+    #map {
+  height: 350px;
+  width: 80%;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #ccc;
+}
+
+    .depot-label {
+      font-size: 12px;
+      font-weight: bold;
+      background: white;
+      padding: 2px 4px;
+      border-radius: 4px;
+      border: 1px solid #666;
+    }
+
+    .depot-section {
+      margin: 40px auto;
+      width: 80%;
+      text-align: center;
+    }
+
+    .depot-section img {
+      max-width: 100%;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="page-container">
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-top">
+      <div class="nav-left">
+        <a href="index.html">
+          <img src="images/logo/transitchitrologowithoutname_750dpi.png" alt="Logo" class="logo" />
+        </a>
+      </div>
+      <div class="nav-center">
+        <a href="index.html">HOME</a>
+        <a href="html_pages/worldmetro/worldmetro.html">CITIES</a>
+        <a href="#">NATIONAL</a>
+        <a href="#">HIGHSPEED</a>
+        <a href="#">ABOUT</a>
+      </div>
+      <div class="nav-right">
+        <a href="https://mail.google.com"><img src="images/logo/Gmail_icon_(2020).svg.png" alt="GMail" /></a>
+        <a href="https://instagram.com"><img src="images/logo/logo-instagram-png-13547.png" alt="Instagram" /></a>
+        <a href="https://x.com/"><img src="images/logo/twitterX_logo_2023.svg" alt="X" /></a>
+      </div>
+    </div>
+
+    <!-- Heading inside navbar -->
+    <div class="main-header">
+      <h1>TRANSIT CHITRO</h1>
+      <p>Mapping India's Transport Revolution</p>
+    </div>
+  </nav>
+
+  <!-- Page Title -->
+  <h2 style="text-align:center; margin-top: 20px;">Kolkata Tram Depot Map</h2>
+
+  <!-- Map -->
+  <div id="map"></div>
+
+  <!-- Depot Sections -->
+
+<h3 style="text-align: center;">TRAM DEPOTS</h3>
+
+  <div id="belgachia" class="depot-section" aria-labelledby="belgachia-label">
+  <div class="image-box">
+    <img src="images/BelgachiaDepot500dpi.png" alt="Belgachia Depot" />
+    <div id="belgachia-label" class="image-caption">BELGACHIA TRAM DEPOT</div>
+  </div>
+</div>
+
+  <div id="gariahat" class="depot-section" aria-labelledby="gariahat-label">
+  <div class="image-box">
+    <img src="images/Gariahat500dpi.png" alt="gariahat Depot" />
+    <div id="gariahat-label" class="image-caption">GRAIAHAT TRAM DEPOT</div>
+  </div>
+</div>
+
+<div id="ghasbagan" class="depot-section" aria-labelledby="ghashbagan-label">
+  <div class="image-box">
+    <img src="images/Ghashbagan500dpi.png" alt="Ghasbagan Depot" />
+    <div id="ghasbagan-label" class="image-caption">GHASHBAGAN TRAM DEPOT</div>
+  </div>
+</div>
+
+<div id="kalighat" class="depot-section" aria-labelledby="kalighat-label">
+  <div class="image-box">
+    <img src="images/Kalighat500dpi.png" alt="kalighat Depot" />
+    <div id="Kalighat-label" class="image-caption">KALIGHAT TRAM DEPOT</div>
+  </div>
+</div>
+
+<div id="khidderpore" class="depot-section" aria-labelledby="khidderpore-label">
+  <div class="image-box">
+    <img src="images/Kidderpore500dpi.png" alt="khidderpore Depot" />
+    <div id="Khidderpore-label" class="image-caption">KHIDDERPORE TRAM DEPOT</div>
+  </div>
+</div>
+
+<div id="parkcircus" class="depot-section" aria-labelledby="parkcircus-label">
+  <div class="image-box">
+    <img src="images/ParkCircus500dpi.png" alt="Gariahat Depot" />
+    <div id="parkcircus-label" class="image-caption">PARK CIRCUS TRAM DEPOT</div>
+  </div>
+</div>
+
+<div id="rajabazar" class="depot-section" aria-labelledby="rajabazar-label">
+  <div class="image-box">
+    <img src="images/Rajabazar500dpi.png" alt="Rajabazar Depot" />
+    <div id="rajabazar-label" class="image-caption">RAJABAZAR TRAM DEPOT</div>
+  </div>
+</div>
+
+  <div id="tollygunge" class="depot-section" aria-labelledby="tollygunge-label">
+  <div class="image-box">
+    <img src="images/TollygungeTramDepot500dpi.png" alt="Tollygunge Depot" />
+    <div id="belgachia-label" class="image-caption">TOLLYGUNGE TRAM DEPOT</div>
+  </div>
+</div>
+
+<!-- Terminus and Loops Sections -->
+<h3 style="text-align: center;">WORKSHOP</h3>
+
+<div id="nonapukur" class="depot-section" aria-labelledby="nonapukur-label">
+  <div class="image-box">
+    <img src="images/1905Nonapukur500dpi.png" alt="Nonapukur 1905 Depot" />
+    <div id="shyambazar-label" class="image-caption">1905 NONAPUKUR TRAM DEPOT AND WORKSHOP</div>
+  </div>
+</div>
+
+<div id="nonapukur" class="depot-section" aria-labelledby="nonapukur-label">
+  <div class="image-box">
+    <img src="images/1980Nonapukur500dpi.png" alt="Nonapukur 1980 Depot" />
+    <div id="shyambazar-label" class="image-caption">1980 NONAPUKUR TRAM DEPOT AND WORKSHOP</div>
+  </div>
+</div>
+
+  <!-- Terminus and Loops Sections -->
+<h3 style="text-align: center;">TERMINUS AND LOOPS</h3>
+
+<div id="bagbazar" class="depot-section" aria-labelledby="bagbazar-label">
+  <div class="image-box">
+    <img src="images/Bagbazar500dpi.png" alt="Bagbazar Tram Terminus" />
+    <div id="bagbazar-label" class="image-caption">BAGBAZAR TRAM TERMINUS</div>
+  </div>
+</div>
+
+<div id="ballygunge" class="depot-section" aria-labelledby="ballygunge-label">
+  <div class="image-box">
+    <img src="images/Ballygunge500dpi.png" alt="Ballygunge Tram Terminus" />
+    <div id="ballygunge-label" class="image-caption">BALLYGUNGE TRAM TERMINUS</div>
+  </div>
+</div>
+
+<div id="behala" class="depot-section" aria-labelledby="behala-label">
+  <div class="image-box">
+    <img src="images/Behala500dpi.png" alt="Behala Tram Terminus" />
+    <div id="behala-label" class="image-caption">BEHALA TRAM TERMINUS</div>
+  </div>
+</div>
+
+<div id="bidhannagar" class="depot-section" aria-labelledby="bidhannagar-label">
+  <div class="image-box">
+    <img src="images/Bidhannagar500dpi.png" alt="Bidhannagar Tram terminus" />
+    <div id="bidhannagar-label" class="image-caption">BIDHANNAGAR TRAM TERMINUS</div>
+  </div>
+</div>
+
+<div id="bbdbagh" class="depot-section" aria-labelledby="bbdbagh-label">
+  <div class="image-box">
+    <img src="images/Dalhousie500dpi.png" alt="Dalhousie Tram Terminus" />
+    <div id="bbdbagh-label" class="image-caption">DALHOUSIE TRAM TERMINUS</div>
+  </div>
+</div>
+
+<div id="esplanade" class="depot-section" aria-labelledby="esplanade-label">
+  <div class="image-box">
+    <img src="images/Esplanade500dpi.png" alt="Esplanade Tram Terminus" />
+    <div id="esplanade-label" class="image-caption">ESPLANADE TRAM TERMINUS</div>
+  </div>
+</div>
+
+<div id="galiffstreet" class="depot-section" aria-labelledby="galiffstreet-label">
+  <div class="image-box">
+    <img src="images/GaliffSt500dpi.png" alt="Galiff Street Tram Terminus" />
+    <div id="galiffstreet-label" class="image-caption">GALIFF STREET TRAM TERMINUS LOOP</div>
+  </div>
+</div>
+
+<div id="highcourt" class="depot-section" aria-labelledby="highcourt-label">
+  <div class="image-box">
+    <img src="images/HighCourt500dpi.png" alt="High Court Tram Terminus" />
+    <div id="highcourt-label" class="image-caption">HIGH COURT TRAM TERMINUS & LOOP</div>
+  </div>
+</div>
+
+<div id="howrahbridge" class="depot-section" aria-labelledby="howrahbridge-label">
+  <div class="image-box">
+    <img src="images/Howrah_Bridge500dpi.png" alt="Howrah Bridge Tram Terminus" />
+    <div id="howrahbridge-label" class="image-caption">HOWRAH BRIDGE TRAM TERMINUS</div>
+  </div>
+</div>
+
+<div id="howrahjunction" class="depot-section" aria-labelledby="howrahjunction-label">
+  <div class="image-box">
+    <img src="images/HowrahJunction500dpi.png" alt="Howrah Junction Tram Terminus" />
+    <div id="howrahjunction-label" class="image-caption">HOWRAH JUNCTION TRAM TERMINUS</div>
+  </div>
+</div>
+
+<div id="joka" class="depot-section" aria-labelledby="joka-label">
+  <div class="image-box">
+    <img src="images/Joka500dpi.png" alt="joka Tram Terminus" />
+    <div id="joka-label" class="image-caption">JOKA TRAM TERMINUS</div>
+  </div>
+</div>
+
+<div id="nimtola" class="depot-section" aria-labelledby="nimtola-label">
+  <div class="image-box">
+    <img src="images/Nimtala500dpi.png" alt="Nimtola Tram Terminus" />
+    <div id="nimtola-label" class="image-caption">NIMTOLA TRAM TERMINUS LOOP</div>
+  </div>
+</div>
+
+<div id="planetarium" class="depot-section" aria-labelledby="planetarium-label">
+  <div class="image-box">
+    <img src="images/PlanetariumLoop500dpi.png" alt="planetarium Tram Loop" />
+    <div id="galiffstreet-label" class="image-caption">PLANETARIUM TRAM LOOP</div>
+  </div>
+</div>
+
+<div id="racecourse" class="depot-section" aria-labelledby="racecourse-label">
+  <div class="image-box">
+    <img src="images/racecourse500dpi.png" alt="racecourse Tram Terminus" />
+    <div id="racecourse-label" class="image-caption">RACECOURSE TRAM LOOP</div>
+  </div>
+</div>
+
+<div id="sealdah" class="depot-section" aria-labelledby="sealdah-label">
+  <div class="image-box">
+    <img src="images/sealdah500dpi.png" alt="Sealdah Tram Terminus" />
+    <div id="sealdah-label" class="image-caption">SEALDAH TRAM TERMINUS</div>
+  </div>
+</div>
+
+<div id="shibpur" class="depot-section" aria-labelledby="shibpur-label">
+  <div class="image-box">
+    <img src="images/Shibpur500dpi.png" alt="Shibpur Tram Terminus" />
+    <div id="galiffstreet-label" class="image-caption">SHIBPUR TRAM TERMINUS</div>
+  </div>
+</div>
+
+<div id="shyambazar" class="depot-section" aria-labelledby="shyambazar-label">
+  <div class="image-box">
+    <img src="images/GaliffSt500dpi.png" alt="shyambazar Tram Terminus" />
+    <div id="shyambazar-label" class="image-caption">SHYAMBAZAR TRAM TERMINUS</div>
+  </div>
+</div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Transit Chitro by Swattik Sarkar.</p>
+    <p>
+      Licensed under 
+      <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">
+        Creative Commons Attribution 4.0 International (CC BY 4.0)
+      </a>.
+    </p>
+    <p>
+      You're welcome to use these maps for educational and personal use with credit. Commercial use requires permission.
+    </p>
+  </footer>
+
+</div>
+
+<!-- Leaflet & Lightbox Scripts -->
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="js/lightbox.js"></script>
+
+<script>
+  const map = L.map('map').setView([22.58, 88.38], 13);
+
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; OpenStreetMap contributors'
+  }).addTo(map);
+
+  fetch('kolkatatram.geojson')
+    .then(res => res.json())
+    .then(data => {
+      L.geoJSON(data, {
+        style: {
+          color: '#0077cc',
+          fillColor: '#66ccff',
+          fillOpacity: 0.4
+        },
+        pointToLayer: (feature, latlng) => {
+          return L.circleMarker(latlng, {
+            radius: 6,
+            fillColor: "#3388ff",
+            color: "#0033aa",
+            weight: 1,
+            opacity: 1,
+            fillOpacity: 0.8
+          });
+        },
+        onEachFeature: function (feature, layer) {
+          if (
+  feature.properties?.name &&
+  (feature.geometry.type === "Polygon" || feature.geometry.type === "MultiPolygon")
+) {
+            layer.bindTooltip(feature.properties.name, {
+              permanent: true,
+              direction: 'center',
+              className: 'depot-label'
+            });
+          }
+          if (feature.properties?.target) {
+            layer.on('click', () => {
+              const target = document.querySelector(feature.properties.target);
+              if (target) {
+                target.scrollIntoView({ behavior: 'smooth' });
+              }
+            });
+          }
+        }
+      }).addTo(map);
+    });
+</script>
+<script src="js/lightbox.min.js"></script>
+
+</body>
+</html>

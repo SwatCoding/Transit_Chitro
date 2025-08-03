@@ -1,102 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Transit Chitro</title>
-  <link href="css/lightbox.min.css" rel="stylesheet">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      background-color: #f9f9f9;
-      margin: 0;
-      padding: 0;
-    }
-
-    header {
-      padding: 20px;
-      background-color: #222;
-      color: white;
-    }
-
-    header img {
-      max-height: 100px;
-    }
-
-    h1 {
-      margin-top: 0;
-      font-size: 2em;
-    }
-
-    .gallery {
-      margin: 30px;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
-
-    .gallery img {
-      border: 2px solid #ccc;
-      border-radius: 8px;
-      width: 250px;
-      height: auto;
-      cursor: pointer;
-    }
-
-    footer {
-      margin-top: 60px;
-      padding: 20px;
-      background-color: #f0f0f0;
-      font-size: 0.9em;
-      color: #555;
-    }
-
-    footer a {
-      color: #555;
-      text-decoration: underline;
-    }
-
-    footer a:hover {
-      color: #000;
-    }
-  </style>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/lightbox.min.css" />
 </head>
 
 <body>
+  <div class="page-container">
 
-  <!-- Header and Logo -->
-  <header>
-    <img src="images/logo/transitchitrologowithoutname_750dpi.png" alt="Transit Chitro Logo">
-    <h1>Transit Chitro</h1>
-    <p>Maps of Indian Transit Systems – Tram, Metro, Railways, and More</p>
-  </header>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="nav-top">
+       <div class="nav-left">
+  <a href="index.html">
+    <img src="images/logo/transitchitrologowithoutname_750dpi.png" alt="Logo" class="logo" />
+  </a>
+</div>
 
-  <!-- Start of Gallery -->
-  <section class="gallery">
-    <a href="images/trams_of_kolkata/kolkata_tram_depots/BelgachiaDepot500dpi.png"
-       data-lightbox="trams"
-       data-title="Belgachia Tram Depot – High Resolution">
-      <img src="images/trams_of_kolkata/kolkata_tram_depots/BelgachiaDepot500dpi.png"
-           alt="Belgachia Tram Depot Map">
+        <div class="nav-center">
+          <a href="index.html">HOME</a>
+          <a href="html_pages/worldmetro/worldmetro.html">CITIES</a>
+          <a href="#">NATIONAL</a>
+          <a href="#">HIGHSPEED</a>
+          <a href="#">ABOUT</a>
+        </div>
+        <div class="nav-right">
+          <a href="https://mail.google.com"><img src="images/logo/Gmail_icon_(2020).svg.png" alt="GMail" /></a>
+          <a href="https://instagram.com"><img src="images/logo/logo-instagram-png-13547.png" alt="Instagram" /></a>
+          <a href="https://x.com/"><img src="images/logo/twitterX_logo_2023.svg" alt="X" /></a>
+        </div>
+      </div>
+
+      <!-- Heading inside navbar -->
+      <div class="main-header">
+        <h1>TRANSIT CHITRO</h1>
+        <p>Mapping India's Transport Revolution</p>
+      </div>
+    </nav>
+
+    <!-- Main content -->
+    <main class="main-layout">
+
+    <!-- Main image -->
+<div class="main-image">
+  <div class="image-box">
+    <a href="html_pages/transport_for_kolkata/transport_for_kolkata.html" class="image-link">
+      <img src="images/others/kolkatametroclip.png" alt="Transport for Kolkata" />
+      <div class="image-caption">Transport for Kolkata</div>
     </a>
-  </section>
+  </div>
+</div>
 
-  <!-- Footer with License -->
-  <footer>
-    <p>© 2025 Transit Chitro by Swattik Sarkar.</p>
-    <p>
-      Licensed under 
-      <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">
-        Creative Commons Attribution 4.0 International (CC BY 4.0)
-      </a>.
-    </p>
-    <p>
-      You're welcome to use these maps for educational and personal use with credit. Commercial use requires permission.
-    </p>
-  </footer>
+<!-- Two stacked smaller images -->
+<div class="side-images">
+  <!-- Metro image -->
+  <div class="image-box">
+    <a href="html_pages/worldmetro/worldmetro.html" class="image-link">
+      <img src="images/others/berlinmetroclip.png" alt="Metro" />
+      <div class="image-caption">METRO</div>
+    </a>
+  </div>
 
-  <script src="js/lightbox-plus-jquery.min.js"></script>
+  <!-- Indian Railways image -->
+  <div class="image-box">
+    <a href="indian_railways.html" class="image-link">
+      <img src="images/others/vandebharatclip.png" alt="Indian Railways" />
+      <div class="image-caption">INDIAN RAILWAYS</div>
+    </a>
+  </div>
+</div>
+
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <div class="search-box">
+          <input type="text" placeholder="Search Maps & Diagrams" />
+          <button>
+            <img src="images/logo/Magnifying_glass_icon.svg" alt="Search" style="height: 18px;" />
+          </button>
+        </div>
+        <div class="sidebar-links">
+          <a href="#">CITIES</a>
+          <a href="#">METRO</a>
+          <a href="#">NATIONAL</a>
+          <a href="#">HIGH SPEED</a>
+          <a href="#">OTHERS</a>
+        </div>
+      </aside>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2025 Transit Chitro by Swattik Sarkar.</p>
+      <p>
+        Licensed under 
+        <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">
+          Creative Commons Attribution 4.0 International (CC BY 4.0)
+        </a>.
+      </p>
+      <p>
+        You're welcome to use these maps for educational and personal use with credit. Commercial use requires permission.
+      </p>
+    </footer>
+
+  </div>
+
+  <script src="js/lightbox.min.js"></script>
 </body>
-</html>
 
+
+</html>

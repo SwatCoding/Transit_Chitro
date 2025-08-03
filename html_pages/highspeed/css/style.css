@@ -1,0 +1,278 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #124167;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 40px;
+  gap: 20px;
+}
+
+.nav-top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.nav-left .logo {
+  height: 50px;
+  transform: scale(3) translateY(10px);
+  transform-origin: left center;
+  display: block;
+}
+
+
+.nav-center a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-right img {
+  height: 24px;
+  width: auto;
+}
+
+/* Header inside navbar */
+.navbar .main-header {
+  text-align: center;
+}
+
+.navbar .main-header h1 {
+  font-size: 3.5em;
+  font-weight: bold;
+  color: white;
+}
+
+.navbar .main-header p {
+  font-size: 1em;
+  color: white;
+}
+
+/* Main layout (grid + sidebar) */
+.main-layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  flex: 1;
+  overflow: visible;
+  flex-wrap: wrap; 
+}
+
+/* Main large image */
+.main-image {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main-image .image-box {
+  flex: 1;
+  border: 1px solid black;
+  text-align: center;
+  background-color: white;
+  overflow: hidden;
+}
+
+/* Two stacked smaller images */
+.side-images {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.side-images .image-box {
+  border: 1px solid black;
+  text-align: center;
+  background-color: white;
+  overflow: hidden;
+}
+
+.image-box img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.image-box {
+  position: relative;
+  display: inline-block;
+}
+
+.image-box .image-link {
+  display: block;
+  position: relative;
+}
+
+.image-box img {
+  display: block;
+  width: 100%;
+}
+
+.image-caption {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  text-align: center;
+  padding: 8px 0;
+  font-weight: bold;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.image-box a:hover {
+  text-decoration: underline;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  flex-shrink: 0;
+}
+
+/* Search box layout */
+.search-box {
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.search-box input {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  font-size: 1em;
+}
+
+.search-box button {
+  padding: 8px 10px;
+  background: white;
+  border: none;
+  cursor: pointer;
+}
+
+.search-box button img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+/* Sidebar links */
+.sidebar-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sidebar-links a {
+  font-size: 1.5em;
+  color: #007bff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.sidebar-links a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background-color: #124167;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 0.9em;
+  font-weight: normal;
+  line-height: 1.6;
+  margin-top: auto;
+}
+
+footer a {
+  color: white;
+  text-decoration: underline;
+}
+
+footer a:hover {
+  color: #d1e7ff;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 900px) {
+  .main-layout {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sidebar {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .sidebar-links {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .main-image,
+  .side-images {
+    width: 100%;
+  }
+
+  .side-images {
+    flex-direction: row;
+  }
+
+  .side-images .image-box {
+    flex: 1;
+  }
+}
+
