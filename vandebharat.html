@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>indianrailways | Transit Chitro</title>
+  <link rel="stylesheet" href="css/indian_railways_style.css" />
+  <style>
+    .svg-container {
+  position: relative;
+  width: 80vmin;
+  aspect-ratio: 2999.0879 / 3186.807;
+  border: 1px solid #555;
+  margin: 30px auto;
+  overflow: hidden;
+  background: #f9f9f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#pan-container
+
+{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  cursor: grab;
+}
+
+.controls {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  z-index: 10;
+  pointer-events: auto;
+}
+
+.controls button {
+  background: #333;
+  color: white;
+  border: none;
+  padding: 5px 8px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.controls button:hover {
+  background: #555;
+}
+  </style>
+</head>
+
+<body>
+  <div class="page-container">
+
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="nav-top">
+        <div class="nav-left">
+          <a href="index.html">
+            <img src="images/logo/transitchitrologowithoutname_750dpi.png" alt="Logo" class="logo" />
+          </a>
+        </div>
+        <div class="nav-center">
+          <a href="index.html">HOME</a>
+          <a href="#">CITIES</a>
+          <a href="#">NATIONAL</a>
+          <a href="#">HIGHSPEED</a>
+          <a href="#">ABOUT</a>
+        </div>
+        <div class="nav-right">
+          <a href="#"><img src="images/logo/Gmail_icon_(2020).svg.png" alt="Gmail" /></a>
+          <a href="#"><img src="images/logo/logo-instagram-png-13547.png" alt="Instagram" /></a>
+          <a href="#"><img src="images/logo/twitterX_logo_2023.svg" alt="X" /></a>
+        </div>
+      </div>
+      <div class="main-header">
+        <h1>TRANSIT CHITRO</h1>
+        <p>Mapping India's Transport Revolution</p>
+      </div>
+    </nav>
+
+    <!-- Title and Map -->
+<main style="text-align: center;">
+  <div class="svg-container" id="svg-wrapper">
+    <div class="controls">
+      <button onclick="zoom(1.1)">+</button>
+      <button onclick="zoom(0.9)">−</button>
+    </div>
+    <div id="pan-container"></div>
+  </div>
+
+  <script>
+    let scale = 1;
+    const minScale = 1;
+    const maxScale = 10;
+    let isPanning = false;
+    let start = { x: 0, y: 0 };
+    let translate = { x: 0, y: 0 };
+
+    fetch('images/indian_railways/vandebharat.svg')
+      .then(res => res.text())
+      .then(svg => {
+        const panContainer = document.getElementById('pan-container');
+        panContainer.innerHTML = svg;
+
+        const svgElement = panContainer.querySelector('svg');
+        svgElement.setAttribute('id', 'map-svg');
+        svgElement.style.width = '100%';
+        svgElement.style.height = '100%';
+        svgElement.style.transformOrigin = '0 0';
+        svgElement.style.transition = 'transform 0.25s ease';
+        svgElement.style.cursor = 'grab';
+        svgElement.style.zIndex = '0';
+
+        // Mouse pan
+        panContainer.addEventListener('mousedown', (e) => {
+          isPanning = true;
+          start.x = e.clientX;
+          start.y = e.clientY;
+          svgElement.style.cursor = 'grabbing';
+        });
+
+        window.addEventListener('mouseup', () => {
+          isPanning = false;
+          svgElement.style.cursor = 'grab';
+        });
+
+        window.addEventListener('mousemove', (e) => {
+          if (!isPanning) return;
+          const dx = e.clientX - start.x;
+          const dy = e.clientY - start.y;
+          start.x = e.clientX;
+          start.y = e.clientY;
+          translate.x += dx;
+          translate.y += dy;
+          applyTransform();
+        });
+
+        // Touch pan
+        panContainer.addEventListener('touchstart', (e) => {
+          isPanning = true;
+          start.x = e.touches[0].clientX;
+          start.y = e.touches[0].clientY;
+        });
+
+        panContainer.addEventListener('touchend', () => {
+          isPanning = false;
+        });
+
+        panContainer.addEventListener('touchmove', (e) => {
+          if (!isPanning) return;
+          e.preventDefault();
+          const dx = e.touches[0].clientX - start.x;
+          const dy = e.touches[0].clientY - start.y;
+          start.x = e.touches[0].clientX;
+          start.y = e.touches[0].clientY;
+          translate.x += dx;
+          translate.y += dy;
+          applyTransform();
+        }, { passive: false });
+
+        // Zoom buttons now functional
+        window.zoom = function (factor) {
+          scale *= factor;
+          scale = Math.max(minScale, Math.min(maxScale, scale));
+          applyTransform();
+        };
+
+        function applyTransform() {
+          const container = document.getElementById('svg-wrapper');
+          const svg = document.getElementById('map-svg');
+          if (svg) {
+            // Clamp translate to keep SVG in view
+            const maxTranslateX = container.clientWidth * (scale - 1);
+            const maxTranslateY = container.clientHeight * (scale - 1);
+
+            translate.x = Math.max(-maxTranslateX, Math.min(translate.x, maxTranslateX));
+            translate.y = Math.max(-maxTranslateY, Math.min(translate.y, maxTranslateY));
+
+            svg.style.transform = `translate(${translate.x}px, ${translate.y}px) scale(${scale})`;
+          }
+        }
+      });
+  </script>
+</main>
+
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2025 Transit Chitro by Swattik Sarkar.</p>
+      <p>
+        Licensed under 
+        <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">
+          Creative Commons Attribution 4.0 International (CC BY 4.0)
+        </a>.
+      </p>
+      <p>
+        You're welcome to use these maps for educational and personal use with credit. Commercial use requires permission.
+      </p>
+    </footer>
+
+  </div>
+</body>
+</html>
