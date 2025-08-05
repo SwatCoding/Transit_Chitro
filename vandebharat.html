@@ -52,6 +52,15 @@
 .controls button:hover {
   background: #555;
 }
+
+    .paragraph {
+      text-align: center;
+      max-width: 1000px;
+      margin: 20px auto;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
   </style>
 </head>
 
@@ -59,34 +68,13 @@
   <div class="page-container">
 
     <!-- Navbar -->
-    <nav class="navbar">
-      <div class="nav-top">
-        <div class="nav-left">
-          <a href="index.html">
-            <img src="images/logo/transitchitrologowithoutname_750dpi.png" alt="Logo" class="logo" />
-          </a>
-        </div>
-        <div class="nav-center">
-          <a href="index.html">HOME</a>
-          <a href="#">CITIES</a>
-          <a href="#">NATIONAL</a>
-          <a href="#">HIGHSPEED</a>
-          <a href="#">ABOUT</a>
-        </div>
-        <div class="nav-right">
-          <a href="#"><img src="images/logo/Gmail_icon_(2020).svg.png" alt="Gmail" /></a>
-          <a href="#"><img src="images/logo/logo-instagram-png-13547.png" alt="Instagram" /></a>
-          <a href="#"><img src="images/logo/twitterX_logo_2023.svg" alt="X" /></a>
-        </div>
-      </div>
-      <div class="main-header">
-        <h1>TRANSIT CHITRO</h1>
-        <p>Mapping India's Transport Revolution</p>
-      </div>
-    </nav>
+    <div id="navbar"></div>
 
     <!-- Title and Map -->
 <main style="text-align: center;">
+
+<h2>SCHEMATIC MAP OF VANDE BHARAT EXPRESS SERVICE ACROSS INDIA</h2> 
+
   <div class="svg-container" id="svg-wrapper">
     <div class="controls">
       <button onclick="zoom(1.1)">+</button>
@@ -94,11 +82,15 @@
     </div>
     <div id="pan-container"></div>
   </div>
+  
+  <p class="paragraph">
+Vande Bharat is a type of higher speed passenger rail service being operated by the Indian Railways connecting major cites and population centres across India. It is operated utilizing the Train 18 or Vande Bharat Electrical multiple Unit clocking a maximum operational speed of 130 km/h making it one of the fastest train in India. Commercial services began in 2019 connecting New Delhi with Varanasi Junction via Kanpur Central and Prayagraj Junction. Since then, 70 Vande Bharat services have been introduced all over India. This schematic map diagram features every operational Vande Bharat Services and its stoppage classified by colour according to its zonal operators with the service name and train number mentioned along the route as of July 2025. The map is a schematic topological diagram focused on union of design, visual appearance and legibility and is not upto geographical scale. 
+</p>
 
   <script>
     let scale = 1;
     const minScale = 1;
-    const maxScale = 10;
+    const maxScale = 15;
     let isPanning = false;
     let start = { x: 0, y: 0 };
     let translate = { x: 0, y: 0 };
@@ -192,19 +184,10 @@
 
 
     <!-- Footer -->
-    <footer>
-      <p>© 2025 Transit Chitro by Swattik Sarkar.</p>
-      <p>
-        Licensed under 
-        <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">
-          Creative Commons Attribution 4.0 International (CC BY 4.0)
-        </a>.
-      </p>
-      <p>
-        You're welcome to use these maps for educational and personal use with credit. Commercial use requires permission.
-      </p>
-    </footer>
+    <div id="footer"></div>
 
   </div>
+<script src="js/include.js"></script>
+
 </body>
 </html>

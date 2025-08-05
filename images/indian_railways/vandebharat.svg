@@ -43,16 +43,16 @@
      inkscape:snap-center="true"
      inkscape:snap-text-baseline="true"
      inkscape:snap-page="true"
-     inkscape:zoom="57.926187"
-     inkscape:cx="1512.5542"
-     inkscape:cy="1579.2943"
+     inkscape:zoom="0.22627417"
+     inkscape:cx="1056.2408"
+     inkscape:cy="1447.3592"
      inkscape:window-width="1920"
      inkscape:window-height="991"
      inkscape:window-x="-9"
      inkscape:window-y="-9"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer9"
-     inkscape:lockguides="true"
+     inkscape:lockguides="false"
      inkscape:snap-global="true"
      borderlayer="true" />
   <defs
@@ -11954,15 +11954,6 @@
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300" />
     <path
-       style="display:inline;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 884.24183,2414.3715 c 1.6676,0 3.3343,0 5,0"
-       id="path14027-7-7-3-2-6-2-9-9-9-1-7-8-5-1"
-       inkscape:path-effect="#path-effect50335"
-       inkscape:original-d="m 884.24183,2414.3715 c 1.6676,0 3.3343,0 5,0"
-       inkscape:export-filename="C:\Users\SWATTIK\Desktop\Transit_Chitro\html_pages\indian_railways\images\vandebharat300dpi.png"
-       inkscape:export-xdpi="300"
-       inkscape:export-ydpi="300" />
-    <path
        style="display:inline;fill:none;stroke:#a9674a;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 792.79838,2596.2538 v 50"
        id="path51231"
@@ -13093,11 +13084,7 @@
     <path
        id="rect78729"
        style="display:inline;opacity:0.3;fill:#646464;fill-opacity:1;stroke:none;stroke-width:4.51385;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
-       d="m 918.35486,1178.1697 c -2.77,0 -5,2.23 -5,5 v 12.9199 c -0.10328,1.7117 -0.35433,3.3619 -0.97461,4.8594 -1.04785,2.5297 -3.1441,4.626 -5.67383,5.6738 -2.52972,1.0479 -5.49328,1.0469 -8.45703,1.0469 h -9.82227 c -5.57979,0 -10.07226,4.4905 -10.07226,10.0703 v 24.8574 c 0,5.5798 4.49248,10.0723 10.07226,10.0723 h 24.85547 c 5.5798,0 10.07227,-4.4925 10.07227,-10.0723 v -19.4277 -5.4297 -34.5703 c 0,-2.77 -2.23,-5 -5,-5 z"
-       sodipodi:nodetypes="sscsssssssssccss"
-       inkscape:export-filename="C:\Users\SWATTIK\Desktop\Transit_Chitro\html_pages\indian_railways\images\vandebharat300dpi.png"
-       inkscape:export-xdpi="300"
-       inkscape:export-ydpi="300" />
+       d="M 918.35547 1178.1699 C 915.58547 1178.1699 913.35547 1180.3999 913.35547 1183.1699 L 913.35547 1196.0898 C 913.25219 1197.8015 913.00114 1199.4517 912.38086 1200.9492 C 911.33301 1203.4789 909.23676 1205.5752 906.70703 1206.623 C 904.17731 1207.6709 901.21375 1207.6699 898.25 1207.6699 L 888.42773 1207.6699 C 882.84794 1207.6699 878.35547 1212.1604 878.35547 1217.7402 L 878.35547 1227.832 C 878.35547 1231.5109 875.39375 1234.4727 871.71484 1234.4727 L 869.72656 1234.4727 C 866.04766 1234.4727 863.08594 1237.4344 863.08594 1241.1133 L 863.08594 1246.0293 C 863.08594 1249.7082 866.04766 1252.6699 869.72656 1252.6699 L 878.35547 1252.6699 L 888.42773 1252.6699 L 894.21484 1252.6699 L 913.2832 1252.6699 C 918.863 1252.6699 923.35547 1248.1775 923.35547 1242.5977 L 923.35547 1223.1699 L 923.35547 1217.7402 L 923.35547 1183.1699 C 923.35547 1180.3999 921.12547 1178.1699 918.35547 1178.1699 z " />
     <g
        id="g8569-3"
        transform="rotate(-22.88912,2832.494,1785.4912)"
@@ -17364,15 +17351,6 @@
          cy="742.42535"
          r="2" />
     </g>
-    <path
-       style="display:inline;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 880.40496,2464.6003 c 1.6676,0 3.3343,0 5,0"
-       id="path14027-7-7-3-2-6-2-9-9-9-1-7-8-5-5"
-       inkscape:path-effect="#path-effect49643"
-       inkscape:original-d="m 880.40496,2464.6003 c 1.6676,0 3.3343,0 5,0"
-       inkscape:export-filename="C:\Users\SWATTIK\Desktop\Transit_Chitro\html_pages\indian_railways\images\vandebharat300dpi.png"
-       inkscape:export-xdpi="300"
-       inkscape:export-ydpi="300" />
     <circle
        style="display:inline;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:13.6566;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
        id="circle79400"
@@ -21070,19 +21048,19 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:20px;line-height:0.5;font-family:Arial;-inkscape-font-specification:'Arial, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:end;text-anchor:end;display:inline"
-       x="868.62866"
+       x="868.43359"
        y="1247.2565"
        id="text90532"
        inkscape:export-filename="C:\Users\SWATTIK\Desktop\Transit_Chitro\html_pages\indian_railways\images\vandebharat300dpi.png"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300"><tspan
          sodipodi:role="line"
-         x="868.62866"
+         x="868.43359"
          y="1247.2565"
          id="tspan90528"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:13.3333px;font-family:Arial;-inkscape-font-specification:'Arial, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">DELHI</tspan><tspan
          sodipodi:role="line"
-         x="868.62866"
+         x="868.43359"
          y="1257.4282"
          id="tspan90530"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:13.3333px;font-family:Arial;-inkscape-font-specification:'Arial, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">CANTONMENT</tspan></text>
@@ -26360,7 +26338,7 @@
            id="tspan154185-4"
            style="font-size:23.2372px;text-align:end;text-anchor:end;fill:#fffffe;fill-opacity:1;stroke-width:14.7856"
            x="1845.0077"
-           y="1011.1538">C.C BY S.A 2023</tspan><tspan
+           y="1011.1538">swatcoding.github.io/Transit_Chitro</tspan><tspan
            sodipodi:role="line"
            style="font-size:23.2372px;text-align:end;text-anchor:end;fill:#fffffe;fill-opacity:1;stroke-width:14.7856"
            x="1845.0077"
@@ -26443,7 +26421,7 @@
        xml:space="preserve"
        style="font-weight:bold;font-size:51.8762px;line-height:1;font-family:Arial;-inkscape-font-specification:'Arial, Bold';display:inline;fill:#fffffe;fill-opacity:1;stroke-width:1.21584"
        x="27.328127"
-       y="309.3483"
+       y="288.53958"
        id="text13576"
        inkscape:export-filename="C:\Users\SWATTIK\Desktop\Transit_Chitro\html_pages\indian_railways\images\vandebharat300dpi.png"
        inkscape:export-xdpi="300"
@@ -26451,8 +26429,13 @@
          sodipodi:role="line"
          id="tspan13574"
          x="27.328127"
-         y="309.3483"
-         style="fill:#fffffe;fill-opacity:1;stroke-width:1.21584">Map of every Vande Bharat ExpressServices in India as of June 2025 </tspan></text>
+         y="288.53958"
+         style="fill:#fffffe;fill-opacity:1;stroke-width:1.21584">Map of every Vande Bharat Express</tspan><tspan
+         sodipodi:role="line"
+         x="27.328127"
+         y="340.41577"
+         style="fill:#fffffe;fill-opacity:1;stroke-width:1.21584"
+         id="tspan15166">Services in India as of June 2025 </tspan></text>
     <g
        id="g34580"
        transform="translate(1369.5365,1393.6404)"
