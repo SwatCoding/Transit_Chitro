@@ -1,20 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Transit Chitro</title>
+  <!-- Load Leaflet CSS first so map renders correctly -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+  <!-- Your page-specific CSS -->
   <link rel="stylesheet" href="css/kolkata_trams_style.css" />
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Transit Chitro</title>
+  <link rel="icon" type="image/png" href="transitchitrofavicon64x64.png">
+  <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/lightbox.min.css" />
-  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+
   <style>
     #map {
-  height: 350px;
-  width: 80%;
-  margin: 20px auto;
-  text-align: center;
-  border: 2px solid #ccc;
-}
+      height: 350px;
+      width: 80%;
+      margin: 20px auto;
+      text-align: center;
+      border: 2px solid #ccc;
+    }
 
     .depot-label {
       font-size: 12px;
@@ -38,6 +45,7 @@
     }
   </style>
 </head>
+
 <body>
 
 <div class="page-container">

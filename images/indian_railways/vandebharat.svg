@@ -28,7 +28,7 @@
      showgrid="false"
      units="px"
      showborder="true"
-     showguides="true"
+     showguides="false"
      inkscape:guide-bbox="true"
      inkscape:snap-bbox="true"
      inkscape:bbox-paths="true"
@@ -43,9 +43,9 @@
      inkscape:snap-center="true"
      inkscape:snap-text-baseline="true"
      inkscape:snap-page="true"
-     inkscape:zoom="0.22627417"
-     inkscape:cx="1056.2408"
-     inkscape:cy="1447.3592"
+     inkscape:zoom="5.12"
+     inkscape:cx="787.5"
+     inkscape:cy="1041.1133"
      inkscape:window-width="1920"
      inkscape:window-height="991"
      inkscape:window-x="-9"
@@ -9086,7 +9086,7 @@
        d="m 547.50576,609.76602 49.9902,-49.9902 L 435.63538,397.9136 h 341.84838 l 161.78894,161.78894 84.8794,-84.87936 h 144.4143 V 515.14 L 1049.316,634.3904 v 101.82394 l 49.4269,49.42695 -49.4269,49.42691 -49.40802,-49.40802 -22.39922,22.39922 217.43014,217.4301 -37.3353,37.3352 137.3776,137.3776 h 224.9709 l 73.8677,73.8677 h 215.3417 v -52.4296 h 56.875 v 52.4296 h 328.8998 v -120.0617 h 306.0835 l 62.3678,-62.3679 h 94.1488 v 163 h 55.4945 v 52 h -108.2472 v 108.2472 l -135.3515,135.3515 v 283.8499 h -68.7198 v -184.2521 h -68.6939 v 127.8801 h -68.7457 v -127.8801 l 68.7456,-68.7457 v -41.0556 h -252.831 v -105.9698 h -76.7923 -85.4154 v 52.9849 h 85.4154 v 52.9849 h -85.4154 v 75.3209 h 85.4154 v 315.951 h -145.2926 l -141.473,141.4731 -230.8751,230.8751 h -147.5776 l -123.5895,123.5896 v 316.4942 l -113.4138,113.4138 v 126.612 l -68.9501,68.9502 v 50.7071 l -38.38432,38.3843 H 942.13196 L 844.52723,3044.2022 560.45717,2760.1321 V 2450.765 2058.7186 h -31.79968 v 128.4218 H 410.78448 l 1e-5,-214 v -201.0173 h -24.74795 v 122.0954 H 175.2492 L 68.8049,1709.8515 h 250.7016 v -36.931 H 73.1804 v -115.7362 h 266.7399 l -178.8217,-178.8217 144.33,-144.3301 56.8213,56.8212 165.24997,-165.2499 127.47279,-127.47284 V 872.4388 L 547.50578,764.97192 Z"
        id="path4744"
        sodipodi:nodetypes="cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
-       inkscape:export-filename="C:\Users\SWATTIK\Desktop\Transit_Chitro\html_pages\indian_railways\images\vandebharat300dpi.png"
+       inkscape:export-filename="C:\Users\SWATTIK\Desktop\Transit_Chitro\images\indian_railways\vandebharat300dpi.png"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300" />
     <path
@@ -12674,7 +12674,7 @@
        inkscape:export-ydpi="300" />
     <path
        style="display:inline;fill:none;stroke:#0064b0;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 771.39286,1054.7879 c 0,-4.837 0,-9.675 -1.6223,-13.7168 -0.70502,-1.7565 -1.71664,-3.3627 -2.90169,-4.8839 -2.33954,-2.6689 -4.36841,-5.4907 -5.64905,-8.6798 -2.19086,-5.4557 -1.96335,-12.2171 -1.96335,-18.7488"
+       d="m 771.39286,1054.7879 c 0,-4.837 0,-9.675 -1.6223,-13.7168 -0.70502,-1.7565 -1.71664,-3.3627 -2.90169,-4.8839 -2.33954,-2.6689 -4.36841,-5.4907 -5.64905,-8.6798 -2.19086,-5.4557 -1.84912,-12.2171 -1.84912,-18.7488"
        id="path378454"
        sodipodi:nodetypes="cscsc"
        inkscape:export-filename="C:\Users\SWATTIK\Desktop\Transit_Chitro\html_pages\indian_railways\images\vandebharat300dpi.png"
@@ -21769,21 +21769,21 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10px;line-height:1;font-family:Arial;-inkscape-font-specification:'Arial, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;text-anchor:start;display:inline"
-       x="741.08154"
-       y="1082.033"
+       x="703.7124"
+       y="1080.0242"
        id="text374606-7"
        inkscape:export-filename="C:\Users\SWATTIK\Desktop\Transit_Chitro\html_pages\indian_railways\images\vandebharat300dpi.png"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300"><tspan
          sodipodi:role="line"
-         x="741.08154"
-         y="1082.033"
-         style="text-align:start;text-anchor:start"
+         x="703.7124"
+         y="1080.0242"
+         style="text-align:end;text-anchor:end"
          id="tspan374604-0">Beas</tspan><tspan
          sodipodi:role="line"
-         x="741.08154"
-         y="1092.033"
-         style="text-align:start;text-anchor:start"
+         x="703.7124"
+         y="1090.0242"
+         style="text-align:end;text-anchor:end"
          id="tspan407764">Junction</tspan></text>
     <text
        xml:space="preserve"
@@ -21859,24 +21859,24 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10px;line-height:1;font-family:Arial;-inkscape-font-specification:'Arial, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:end;text-anchor:end;display:inline"
-       x="722.6369"
+       x="769.39276"
        y="1080.0242"
        id="text397647"
        inkscape:export-filename="C:\Users\SWATTIK\Desktop\Transit_Chitro\html_pages\indian_railways\images\vandebharat300dpi.png"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300"><tspan
          sodipodi:role="line"
-         x="722.6369"
+         x="769.39276"
          y="1080.0242"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10px;font-family:Arial;-inkscape-font-specification:'Arial, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:end;text-anchor:end"
          id="tspan397643">Jalandhar</tspan><tspan
          sodipodi:role="line"
-         x="722.6369"
+         x="769.39276"
          y="1090.0242"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10px;font-family:Arial;-inkscape-font-specification:'Arial, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:end;text-anchor:end"
          id="tspan398301">Cantonment</tspan><tspan
          sodipodi:role="line"
-         x="722.6369"
+         x="769.39276"
          y="1100.0242"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10px;font-family:Arial;-inkscape-font-specification:'Arial, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:end;text-anchor:end"
          id="tspan397645">Junction</tspan></text>

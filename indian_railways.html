@@ -3,10 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>indianrailways | Transit Chitro</title>
-  <link rel="stylesheet" href="css/indian_railways_style.css" />
+  <title>Transit Chitro</title>
+  <link rel="icon" type="image/png" href="transitchitrofavicon64x64.png">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/navbar_footer.css" />
+  <link rel="stylesheet" href="css/lightbox.min.css" />
   <style>
-    .service-grid-container {
+    .city-grid-container {
       display: flex;
       flex-direction: column;
       gap: 40px;
@@ -15,24 +18,24 @@
       margin: auto;
     }
 
-    .train-service h4 {
+    .service-group h4 {
       margin: 10px 0;
       font-size: 1.5rem;
       border-bottom: 2px solid #12456A;
       padding-bottom: 5px;
     }
 
-    .train-service {
+    .city-grid {
       display: flex;
       flex-wrap: wrap;
       gap: 20px;
     }
 
-    .train-service .image-box {
+    .city-grid .image-box {
       width: 150px;
     }
 
-    .train-service .image-box img {
+    .city-grid .image-box img {
       height: 120px;
       width: 100%;
       object-fit: cover;
@@ -58,6 +61,7 @@
     }
   </style>
 </head>
+
 <body>
   <div class="page-container">
 
@@ -66,24 +70,218 @@
 
     <!-- Title and Map -->
     <main style="text-align: center;">
-      <h3 style="margin-top: 30px;">Select a map below</h3>
-      <div style="margin: 20px auto; max-width: 600px;">
-      </div>
 
-      <!-- service Grids -->
-      <div class="service-grid-container">
+      <!-- City Grids -->
+      <div class="city-grid-container">
 
-        <!-- Vande Bharat  -->
-        <div class="train-service">
-          <div class="train-service">
+        <!-- Group A -->
+        <div class="service-group">
+          <h4>EXPRESS PASSENGER SERVICE</h4>
+          <div class="city-grid">
+
             <div class="image-box">
-              <a href="vandebharat.html">
-                <img src="images/indian_railways/vandebharatclip200dpi.png" alt="Vande Bharat">
-                <div class="image-caption">VANDE BHARAT EXPRESS SERVICE</div>
+              <a href="double_decker.html">
+                <img src="images/others/doubledeckerclip.jpg" alt="Double Decker Express Service Map">
+                <div class="image-caption">Double Decker Express Service Map</div>
+              </a>
+           </div>
+            <div class="image-box">
+              <a href="rajya_rani_Express.html">
+                <img src="images/others/india_express.jpg" alt="Rajya Rani Express Service Map">
+                <div class="image-caption">Rajya Rani Express Services Map</div>
               </a>
             </div>
+            <div class="image-box">
+              <a href="vivekexpress.html">
+                <img src="images/others/asansol.jpg" alt="Vivek Express Service Map">
+                <div class="image-caption">Vivek Express Services Map</div>
               </a>
+            </div>
+            <div class="image-box">
+              <a href="samparkkranti.html">
+                <img src="images/others/samparkkranti.jpg" alt="Sampark Kranti Express Service Map">
+                <div class="image-caption">Sampark Kranti Express Service Map</div>
+              </a>
+            </div>
+            <!-- Add more A cities here -->   
+           </div>
+        </div>
+
+        <!-- Group B -->
+        <div class="service-group">
+          <h4>FREIGHT</h4>
+          <div class="city-grid">
+
+            <div class="image-box">
+              <a href="edfc.html">
+                <img src="images/others/edfc.jpg" alt="Eastern Dedicated Freight Corridor">
+                <div class="image-caption">Eastern Dedicated Freight Corridor</div>
+              </a>
+            </div>
+            <div class="image-box">
+              <a href="wdf.html">
+                <img src="images/others/ecdfc.jpg" alt="East Coast Dedicated Freight Corridor">
+                <div class="image-caption">East Coast Dedicated Freight Corridor</div>
+              </a>
+            </div>
+            <div class="image-box">
+              <a href="bhopal.html">
+                <img src="images/others/wdfc.jpg" alt="Western Dedicated Freight Corridor">
+                <div class="image-caption">Western Dedicated Freight Corridor</div>
+              </a>
+            </div>
+            <!-- Add more B cities here -->
           </div>
+        </div>
+
+        <!-- Group C -->
+        <div class="service-group">
+          <h4>HIGHER-SPEED PASSENGER SERVICE</h4>
+          <div class="city-grid">
+
+            <div class="image-box">
+              <a href="amritbharat.html">
+                <img src="images/others/amritbharatclip.jpg" alt="Amrit Bharat Express Service Map">
+                <div class="image-caption">Amrit Bharat Express Service Map</div>
+              </a>
+            </div>
+            <div class="image-box">
+              <a href="duronto.html">
+                <img src="images/others/durontoclip.jpg" alt="Duronto Express Service Map">
+                <div class="image-caption">Duronto Express Service Map</div>
+              </a>
+            </div>
+            <div class="image-box">
+              <a href="janshatabdi.html">
+                <img src="images/others/janshatabdiclip.jpg" alt="Janshatabdi Express Service Map">
+                <div class="image-caption">Janshatabdi Express Service Map</div>
+              </a>
+            </div>
+            <div class="image-box">
+              <a href="rajdhani.html">
+                <img src="images/others/rajdhaniclip.jpg" alt="Rajdhani Express Service Map">
+                <div class="image-caption">Rajdhani Express Service Map</div>
+              </a>
+            </div>
+            <div class="image-box">
+              <a href="shatabdi.html">
+                <img src="images/others/shatabdiclip.jpg" alt="Shatabdi Express Service Map">
+                <div class="image-caption">Shatabdi Express Service Map</div>
+              </a>
+            </div>
+            <div class="image-box">
+              <a href="vandeharat.html">
+                <img src="images/others/vandebharatclip.png" alt="Vande Bharat Express Service Map">
+                <div class="image-caption">Vande Bharat Express Service Map</div>
+              </a>
+            </div>
+            <!-- Add more B cities here -->
+          </div>
+        </div>
+
+        <!-- Group D -->
+        <div class="service-group">
+          <h4>LUXURY PASSENGER SERVICE</h4>
+          <div class="city-grid">
+
+            <div class="image-box">
+              <a href="bharatgaurav.html">
+                <img src="images/others/bharatgauravclip.jpg" alt="Bharat Gaurav Express Service Map">
+                <div class="image-caption">Bharat Gaurav Express Service Map</div>
+              </a>
+            </div>
+            <div class="image-box">
+              <a href="deccanodyssey.html">
+                <img src="images/others/deccanodysseyclip.jpg" alt="Deccan Odyssey Express Service Map">
+                <div class="image-caption">Deccan Odyssey Express Service Map</div>
+              </a>
+            </div>
+            <div class="image-box">
+              <a href="maharajas.html">
+                <img src="images/others/maharajasclip.jpg" alt="Maharajas Express Service Map">
+                <div class="image-caption">Maharajas Express Service Map</div>
+              </a>
+            </div>
+            <!-- Add more B cities here -->
+          </div>
+        </div>
+
+        <!-- Group E -->
+        <div class="service-group">
+          <h4>MOUNTAIN RAILWAYS</h4>
+          <div class="city-grid">
+
+            <div class="image-box">
+              <a href="dhr.html">
+                <img src="images/others/dhrclip.jpg" alt="Darjeeling Himalayan Mountain Railway Map">
+                <div class="image-caption">Darjeeling Himalayan Mountain Railway Map</div>
+              </a>
+            </div>
+            <div class="image-box">
+              <a href="ksmr.html">
+                <img src="images/others/kalkaclip.jpg" alt="Kalka Shimla Mountain Railway Map">
+                <div class="image-caption">Kalka Shimla Mountain Railway Map</div>
+              </a>
+            </div>
+            <div class="image-box">
+              <a href="matheranmr.html">
+                <img src="images/others/matheranclip.jpg" alt="Matheran Mountain Railway Map">
+                <div class="image-caption">Matheran Mountain Railway Map</div>
+              </a>
+            </div>
+            <div class="image-box">
+              <a href="nilgirimr.html">
+                <img src="images/others/nilgiriclip.jpg" alt="Nilgiri Mountain Railway Map">
+                <div class="image-caption">Nilgiri Mountain Railway Map</div>
+              </a>
+            </div>
+            <!-- Add more B cities here -->
+          </div>
+        </div>
+
+        <!-- Group F -->
+        <div class="service-group">
+          <h4>SUBURBAN RAILWAYS</h4>
+          <div class="city-grid">
+
+            <div class="image-box">
+              <a href="chennai_sr.html">
+                <img src="images/others/chennaisrclip.jpg" alt="Chennai Suburban Railway Map">
+                <div class="image-caption">Chennai Suburban Railway Map</div>
+              </a>
+            </div>
+            <div class="image-box">
+              <a href="delhi_sr.html">
+                <img src="images/others/delhisrclip.jpg" alt="Delhi Suburban Railway Map">
+                <div class="image-caption">Delhi Suburban Railway</div>
+              </a>
+            </div>
+            <div class="image-box">
+              <a href="kolkata_sr.html">
+                <img src="images/others/kolkatametroclip.png" alt="Kolkata Suburban Railway">
+                <div class="image-caption">Kolkata Suburban Railway</div>
+              </a>
+            </div>
+            <div class="image-box">
+              <a href="mumbai_sr.html">
+                <img src="images/others/mumbaisrclip.jpg" alt="Mumbai Suburban Railway">
+                <div class="image-caption">Mumbai Suburban Railway</div>
+              </a>
+            </div>
+            <div class="image-box">
+              <a href="hyderabadmmts.html">
+                <img src="images/others/hyderabadclip.jpg" alt="Hyderabad Multimodal Tranport System Map">
+                <div class="image-caption">Hyderabad Multimodal Tranport System Map</div>
+              </a>
+            </div>
+            <!-- Add more B cities here -->
+          </div>
+        </div>
+
+
+        <!-- Continue with C, D, E... -->
+
+      </div>
     </main>
 
     <!-- Footer -->

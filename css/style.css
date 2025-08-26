@@ -241,7 +241,7 @@ footer a:hover {
   color: #d1e7ff;
 }
 
-/* Responsive for smaller screens */
+  /* mobile style */
 @media (max-width: 900px) {
   .main-layout {
     flex-direction: column;
@@ -275,4 +275,5 @@ footer a:hover {
     flex: 1;
   }
 }
+
 
