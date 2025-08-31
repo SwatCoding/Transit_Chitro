@@ -9,62 +9,223 @@
   <link rel="stylesheet" href="css/navbar_footer.css" />
   <link rel="stylesheet" href="css/lightbox.min.css" />
 
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
   <style>
-    .svg-container {
-  position: relative;
-  width: 80vmin;
-  aspect-ratio: 2999.0879 / 3186.807;
-  border: 1px solid #555;
-  margin: 30px auto;
-  overflow: hidden;
-  background: #f9f9f9;
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f7f7f7;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    h3 {
+      margin: 20px 0;
+      text-align: center;
+      font-weight: normal;
+    }
+
+    .page-container {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /*Map container will auto-scale to screen size but preserve aspect ratio*/
+    .map-container {
+      width: min(90vw, 90vh * 9372 / 9959);   /* scale by width unless height smaller */
+      height: calc( width * 9959 / 9372 );
+      aspect-ratio: 9372 / 9959;
+      border: 1px solid #555;
+      margin: 10px auto;
+      margin-bottom: 50px;
+    }
+
+    #map {
+      width: 100%;
+      height: 100%;
+    }
+    #map,
+    #map * {
+      cursor: move !important;
+    }
+    /But when hovering the zoom controls, switch to default arrow/
+    #map .leaflet-control-zoom,
+    #map .leaflet-control-zoom *,
+    #map .leaflet-control-container,
+    #map .leaflet-control-container * {
+    cursor: default !important;
+    }
+
+
+    /Shapes and Caption stylings which are below the main map/
+.shape {
+  background: #ddd;              /* fallback if no image */
+  margin: 10px auto;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-#pan-container
-
-{
-  width: 100%;
-  height: 100%;
   overflow: hidden;
-  cursor: grab;
 }
 
-.controls {
-  position: absolute;
-  top: 10px;
-  right: 10px;
+/* Rectangle (image with 153:50 ratio) */
+.rectangle {
+  width: 60vw;
+  max-width: 800px;
+  aspect-ratio: 153 / 50;
+  border-radius: 20px;
+}
+
+/* Bigger 2 Circle */
+.circle {
+  width: min(400px);
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+}
+
+/* Smaller 4 Circles Row */
+
+/* Circles (200px diameter) */
+
+.small-circle {
+  width: 200px;
+  height: 200px;        /* explicitly force equal height */
+  border-radius: 50%;   /* makes it round */
+  aspect-ratio: 1 / 1;  /* ensures square box even if parent flexes */
+  overflow: hidden;
+}
+
+.circles-row {
+  display: flex;
+  flex-wrap: wrap;         /* wrap on small screens */
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: -20px;
+}
+
+/* Rectangles Row */
+.rectangles-row {
+  display: flex;
+  flex-wrap: wrap;         /* wrap on small screens */
+  justify-content: center;
+  gap: 500px;
+  margin-bottom: 40px;
+}
+
+/* Rectangle with 20:7 ratio */
+.rect-20-7 {
+  height: 200px;             /* lock height */
+  aspect-ratio: 20 / 7;      /* width adjusts automatically (~571px) */
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+/* Rectangle with 7:2 ratio */
+.rect-7-2 {
+  height: 200px;             /* lock height */
+  aspect-ratio: 7 / 2;       /* width adjusts automatically (~700px) */
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+/* Caption container */
+.shape-with-caption {
   display: flex;
   flex-direction: column;
-  gap: 5px;
-  z-index: 10;
-  pointer-events: auto;
+  align-items: center;
+  max-width: 220px;
+  text-align: center;
 }
 
-.controls button {
-  background: #333;
-  color: white;
-  border: none;
-  padding: 5px 8px;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 4px;
+.shape-with-caption .caption {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  line-height: 1.3;
 }
 
-.controls button:hover {
-  background: #555;
+
+/* Images inside shapes */
+.shape img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 1px solid grey;
+  border-radius: 15px;
+  border-radius: inherit;   /* rectangle keeps rounded corners, circle stays round */
 }
 
-    .paragraph {
-      text-align: center;
-      max-width: 1000px;
-      margin: 20px auto;
-      font-size: 16px;
-      line-height: 1.6;
-    }
+/* Layout for circles */
+.shapes-row {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
 
+.caption {
+  text-align: center;
+  margin-top: 8px;
+  margin: 20px 0 50px 0;
+  font-size: 1rem;
+  text-align: left;
+}
+
+/* === Squares Row === */
+.squares-row {
+  display: flex;
+  flex-direction: row;      /* force side-by-side */
+  justify-content: center;  /* center horizontally */
+  align-items: flex-start;  /* align to top */
+  gap: 50px;                /* 50px gap between squares */
+  margin-top: -40px;
+  flex-wrap: nowrap;        /* prevent stacking */
+}
+
+.big-square {
+  width: 500px;
+  height: 500px;
+  border-radius: 15px;
+  border: 1px solid #888;   /* <-- visible border */
+  overflow: hidden;
+  background: #fff;
+}
+
+.shape-with-caption-square {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 500px;
+}
+
+.shape-with-caption-square img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.shape-with-caption-square .caption {
+  margin-top: 12px;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
+}
+p.map-breakdown {
+  font-weight: normal;      /* makes it bold */
+  font-size: 24px;        /* makes it bigger */
+  margin: 0px 0 20px;    /* space above (40px) and below (20px) */
+  text-align: center;     /* optional: centers it */
+}
   </style>
 </head>
 
@@ -75,123 +236,156 @@
     <div id="navbar"></div>
 
     <!-- Title and Map -->
-<main style="text-align: center;">
+    <main>
 
-<h2>SCHEMATIC MAP OF VANDE BHARAT EXPRESS SERVICE ACROSS INDIA</h2> 
+      <h3>SCHEMATIC MAP OF VANDE BHARAT EXPRESS SERVICES</h3>  
+      <div class="map-container">
+        <div id="map"></div>
+      </div>
+     
+      <p class="map-breakdown">MAP BREAKDOWN</p>
 
-  <div class="svg-container" id="svg-wrapper">
-    <div class="controls">
-      <button onclick="zoom(1.1)">+</button>
-      <button onclick="zoom(0.9)">−</button>
+      <!-- Rectangle image -->
+       <div class="shape rectangle">
+       <img src="images/others/vandebharat/vbmaplabelsclip.png" alt="Rectangle">
+      </div>
+      
+      <p class="caption">-All the Vande Bharat Express Service has been colour coded according to their zonal operators<br>-Service Name and Train Number are provided along the  line</p>  
+
+<!-- Smaller Circles Row -->
+<div class="circles-row">
+  <div class="shape-with-caption">
+    <div class="shape small-circle">
+      <img src="images/others/vandebharat/vbmumbaistations.png" alt="Stations in Mumbai">
     </div>
-    <div id="pan-container"></div>
+    <div class="caption">Mumbai has the most stations serving Vande Bharat at 6 if not counting Panvel in Navi Mumbai.</div>
   </div>
-  
-  <p class="paragraph">
-Vande Bharat is a type of higher speed passenger rail service being operated by the Indian Railways connecting major cites and population centres across India. It is operated utilizing the Train 18 or Vande Bharat Electrical multiple Unit clocking a maximum operational speed of 130 km/h making it one of the fastest train in India. Commercial services began in 2019 connecting New Delhi with Varanasi Junction via Kanpur Central and Prayagraj Junction. Since then, 70 Vande Bharat services have been introduced all over India. This schematic map diagram features every operational Vande Bharat Services and its stoppage classified by colour according to its zonal operators with the service name and train number mentioned along the route as of July 2025. The map is a schematic topological diagram focused on union of design, visual appearance and legibility and is not upto geographical scale. 
-</p>
 
-  <script>
-    let scale = 1;
-    const minScale = 1;
-    const maxScale = 15;
-    let isPanning = false;
-    let start = { x: 0, y: 0 };
-    let translate = { x: 0, y: 0 };
+  <div class="shape-with-caption">
+    <div class="shape small-circle">
+      <img src="images/others/vandebharat/vbkolkatastations.png" alt="Stations in Kolkata">
+    </div>
+    <div class="caption">Kolkata holds the record for the most Vande Bharat Express services operating from 1 station with Howrah Junction.</div>
+  </div>
 
-    fetch('images/indian_railways/vandebharat.svg')
-      .then(res => res.text())
-      .then(svg => {
-        const panContainer = document.getElementById('pan-container');
-        panContainer.innerHTML = svg;
+  <div class="shape-with-caption">
+    <div class="shape small-circle">
+      <img src="images/others/vandebharat/vbdelhistations.png" alt="Stations in Delhi">
+    </div>
+    <div class="caption">Delhi holds the record of the second most Vande Bharat stations with 5.</div>
+  </div>
 
-        const svgElement = panContainer.querySelector('svg');
-        svgElement.setAttribute('id', 'map-svg');
-        svgElement.style.width = '100%';
-        svgElement.style.height = '100%';
-        svgElement.style.transformOrigin = '0 0';
-        svgElement.style.transition = 'transform 0.25s ease';
-        svgElement.style.cursor = 'grab';
-        svgElement.style.zIndex = '0';
+  <div class="shape-with-caption">
+    <div class="shape small-circle">
+      <img src="images/others/vandebharat/vbchennaistations.png" alt="Stations in Chennai">
+    </div>
+    <div class="caption">Chennai is served by 3 stations if Tambaram is counted.</div>
+  </div>
+</div>
 
-        // Mouse pan
-        panContainer.addEventListener('mousedown', (e) => {
-          isPanning = true;
-          start.x = e.clientX;
-          start.y = e.clientY;
-          svgElement.style.cursor = 'grabbing';
-        });
+<!-- City Rectangles Row -->
+<div class="rectangles-row">
+  <div class="shape-with-caption">
+    <div class="shape rect-7-2">
+      <img src="images/others/vandebharat/vbblorestations.png" alt="Stations in Bengaluru">
+    </div>
+    <div class="caption">Bengaluru shares the record of the second most stations of 5 with Delhi.</div>
+  </div>
 
-        window.addEventListener('mouseup', () => {
-          isPanning = false;
-          svgElement.style.cursor = 'grab';
-        });
+  <div class="shape-with-caption">
+    <div class="shape rect-20-7">
+      <img src="images/others/vandebharat/vbhyderabadstations.png" alt="Stations in Hyderabad">
+    </div>
+    <div class="caption">Hyderabad is served only by 2 stations even though the city has 6 major railway junctions.</div>
+  </div>
+</div>
 
-        window.addEventListener('mousemove', (e) => {
-          if (!isPanning) return;
-          const dx = e.clientX - start.x;
-          const dy = e.clientY - start.y;
-          start.x = e.clientX;
-          start.y = e.clientY;
-          translate.x += dx;
-          translate.y += dy;
-          applyTransform();
-        });
+   <!-- Squares Row -->
+   <div class="squares-row">
+    <div class="shape-with-caption-square">
 
-        // Touch pan
-        panContainer.addEventListener('touchstart', (e) => {
-          isPanning = true;
-          start.x = e.touches[0].clientX;
-          start.y = e.touches[0].clientY;
-        });
+        <div class="big-square">
+         <img src="images/others/vandebharat/vbdelhiinset.png" alt="Delhi and Northern Railway Inset">
+        </div>
+    <div class="caption">Delhi and Northern Railway Inset</div>
+   </div>
 
-        panContainer.addEventListener('touchend', () => {
-          isPanning = false;
-        });
+   <div class="shape-with-caption-square">
+    <div class="big-square">
+         <img src="images/others/vandebharat/vbmumbaiinset.png" alt="Mumbai and western Railway Inset">
+        </div>
+       <div class="caption">Mumbai and western Railway Inset</div>
+    </div>
+   </div>
 
-        panContainer.addEventListener('touchmove', (e) => {
-          if (!isPanning) return;
-          e.preventDefault();
-          const dx = e.touches[0].clientX - start.x;
-          const dy = e.touches[0].clientY - start.y;
-          start.x = e.touches[0].clientX;
-          start.y = e.touches[0].clientY;
-          translate.x += dx;
-          translate.y += dy;
-          applyTransform();
-        }, { passive: false });
 
-        // Zoom buttons now functional
-        window.zoom = function (factor) {
-          scale *= factor;
-          scale = Math.max(minScale, Math.min(maxScale, scale));
-          applyTransform();
-        };
+     <!-- Bigger 2 Circles -->
 
-        function applyTransform() {
-          const container = document.getElementById('svg-wrapper');
-          const svg = document.getElementById('map-svg');
-          if (svg) {
-            // Clamp translate to keep SVG in view
-            const maxTranslateX = container.clientWidth * (scale - 1);
-            const maxTranslateY = container.clientHeight * (scale - 1);
+     <div class="shapes-row">
+     <div class="shape circle">
+     <img src="images/others/vandebharat/msngvbgmaps.png" alt="Nagercoil Madurai Geographical Route Map">
+     </div>
+     <div class="shape circle">
+     <img src="images/others/vandebharat/msncvbsim.png" alt="Nagercoil Madurai Simplified Schematic Map Route Map">
+     </div>
+     </div>
 
-            translate.x = Math.max(-maxTranslateX, Math.min(translate.x, maxTranslateX));
-            translate.y = Math.max(-maxTranslateY, Math.min(translate.y, maxTranslateY));
+     <p class="caption">-The geographical route was identified using Google Maps.<br>-The stations were equally placed alone the lines</p>
+</div>
 
-            svg.style.transform = `translate(${translate.x}px, ${translate.y}px) scale(${scale})`;
-          }
-        }
-      });
-  </script>
-</main>
-
+    </main>
 
     <!-- Footer -->
     <div id="footer"></div>
-
   </div>
-<script src="js/include.js"></script>
 
-</body>
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="js/include.js"></script>
+
+  <script>
+  const w = 9372;
+  const h = 9959;
+
+  const map = L.map('map', {
+      crs: L.CRS.Simple,
+      attributionControl: false,
+      minZoom: -5,
+      wheelPxPerZoomLevel: 40,
+      zoomControl: false,
+      inertia: true,
+      inertiaDeceleration: 4000,
+      inertiaMaxSpeed: 2000,
+      easeLinearity: 0.5,
+      zoomAnimation: true,
+      markerZoomAnimation: true,
+      fadeAnimation: true
+    });
+
+  const bounds = [[0, 0], [h, w]];
+  L.imageOverlay('images/indian_railways/vandebharat300dpi.png', bounds).addTo(map);
+
+  // Always show full image on load
+  map.fitBounds(bounds);
+
+  // calculate zoom limits based on container
+  const fitZoom = map.getBoundsZoom(bounds, true);  // zoom that fits image exactly
+  map.setMinZoom(fitZoom);                          // stop zooming out past fit
+  map.setMaxZoom(fitZoom + 4);                      // allow zoom in 4 more levels
+  map.fitBounds(bounds);
+
+  // Restrict dragging outside
+  map.setMaxBounds(bounds);
+  map.options.maxBoundsViscosity = 1.0;
+
+  // Add zoom buttons only on the right
+  L.control.zoom({ position: 'topright' }).addTo(map);
+
+  // Re-fit when window resizes
+  window.addEventListener("resize", () => {
+    map.invalidateSize();     // important for Leaflet resize
+    map.fitBounds(bounds);    // keeps image exactly in view
+  });
+</script>
+
 </html>
