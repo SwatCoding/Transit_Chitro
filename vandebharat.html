@@ -7,227 +7,12 @@
   <link rel="icon" type="image/png" href="transitchitrofavicon64x64.png">
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/navbar_footer.css" />
+  <link rel="stylesheet" href="css/vandebharat.css" />
   <link rel="stylesheet" href="css/lightbox.min.css" />
 
   <!-- Leaflet CSS -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f7f7f7;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-    }
-
-    h3 {
-      margin: 20px 0;
-      text-align: center;
-      font-weight: normal;
-    }
-
-    .page-container {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-    }
-
-    main {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    /*Map container will auto-scale to screen size but preserve aspect ratio*/
-    .map-container {
-      width: min(90vw, 90vh * 9372 / 9959);   /* scale by width unless height smaller */
-      height: calc( width * 9959 / 9372 );
-      aspect-ratio: 9372 / 9959;
-      border: 1px solid #555;
-      margin: 10px auto;
-      margin-bottom: 50px;
-    }
-
-    #map {
-      width: 100%;
-      height: 100%;
-    }
-    #map,
-    #map * {
-      cursor: move !important;
-    }
-    /But when hovering the zoom controls, switch to default arrow/
-    #map .leaflet-control-zoom,
-    #map .leaflet-control-zoom *,
-    #map .leaflet-control-container,
-    #map .leaflet-control-container * {
-    cursor: default !important;
-    }
-
-
-    /Shapes and Caption stylings which are below the main map/
-.shape {
-  background: #ddd;              /* fallback if no image */
-  margin: 10px auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
-
-/* Rectangle (image with 153:50 ratio) */
-.rectangle {
-  width: 60vw;
-  max-width: 800px;
-  aspect-ratio: 153 / 50;
-  border-radius: 20px;
-}
-
-/* Bigger 2 Circle */
-.circle {
-  width: min(400px);
-  aspect-ratio: 1 / 1;
-  border-radius: 50%;
-}
-
-/* Smaller 4 Circles Row */
-
-/* Circles (200px diameter) */
-
-.small-circle {
-  width: 200px;
-  height: 200px;        /* explicitly force equal height */
-  border-radius: 50%;   /* makes it round */
-  aspect-ratio: 1 / 1;  /* ensures square box even if parent flexes */
-  overflow: hidden;
-}
-
-.circles-row {
-  display: flex;
-  flex-wrap: wrap;         /* wrap on small screens */
-  justify-content: center;
-  gap: 40px;
-  margin-bottom: -20px;
-}
-
-/* Rectangles Row */
-.rectangles-row {
-  display: flex;
-  flex-wrap: wrap;         /* wrap on small screens */
-  justify-content: center;
-  gap: 500px;
-  margin-bottom: 40px;
-}
-
-/* Rectangle with 20:7 ratio */
-.rect-20-7 {
-  height: 200px;             /* lock height */
-  aspect-ratio: 20 / 7;      /* width adjusts automatically (~571px) */
-  border-radius: 15px;
-  overflow: hidden;
-}
-
-/* Rectangle with 7:2 ratio */
-.rect-7-2 {
-  height: 200px;             /* lock height */
-  aspect-ratio: 7 / 2;       /* width adjusts automatically (~700px) */
-  border-radius: 15px;
-  overflow: hidden;
-}
-
-/* Caption container */
-.shape-with-caption {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 220px;
-  text-align: center;
-}
-
-.shape-with-caption .caption {
-  margin-top: 10px;
-  font-size: 0.9rem;
-  line-height: 1.3;
-}
-
-
-/* Images inside shapes */
-.shape img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border: 1px solid grey;
-  border-radius: 15px;
-  border-radius: inherit;   /* rectangle keeps rounded corners, circle stays round */
-}
-
-/* Layout for circles */
-.shapes-row {
-  display: flex;
-  justify-content: center;
-  gap: 50px;
-  flex-wrap: wrap;
-}
-
-.caption {
-  text-align: center;
-  margin-top: 8px;
-  margin: 20px 0 50px 0;
-  font-size: 1rem;
-  text-align: left;
-}
-
-/* === Squares Row === */
-.squares-row {
-  display: flex;
-  flex-direction: row;      /* force side-by-side */
-  justify-content: center;  /* center horizontally */
-  align-items: flex-start;  /* align to top */
-  gap: 50px;                /* 50px gap between squares */
-  margin-top: -40px;
-  flex-wrap: nowrap;        /* prevent stacking */
-}
-
-.big-square {
-  width: 500px;
-  height: 500px;
-  border-radius: 15px;
-  border: 1px solid #888;   /* <-- visible border */
-  overflow: hidden;
-  background: #fff;
-}
-
-.shape-with-caption-square {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  max-width: 500px;
-}
-
-.shape-with-caption-square img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.shape-with-caption-square .caption {
-  margin-top: 12px;
-  font-size: 1rem;
-  line-height: 1.5;
-  color: #333;
-}
-p.map-breakdown {
-  font-weight: normal;      /* makes it bold */
-  font-size: 24px;        /* makes it bigger */
-  margin: 0px 0 20px;    /* space above (40px) and below (20px) */
-  text-align: center;     /* optional: centers it */
-}
-  </style>
-</head>
+  </head>
 
 <body>
   <div class="page-container">
@@ -289,14 +74,14 @@ p.map-breakdown {
     <div class="shape rect-7-2">
       <img src="images/others/vandebharat/vbblorestations.png" alt="Stations in Bengaluru">
     </div>
-    <div class="caption">Bengaluru shares the record of the second most stations of 5 with Delhi.</div>
+    <div class="caption-blr">Bengaluru shares the record of the second most stations of 5 with Delhi.</div>
   </div>
 
   <div class="shape-with-caption">
     <div class="shape rect-20-7">
       <img src="images/others/vandebharat/vbhyderabadstations.png" alt="Stations in Hyderabad">
     </div>
-    <div class="caption">Hyderabad is served only by 2 stations even though the city has 6 major railway junctions.</div>
+    <div class="caption-hyd">Hyderabad is served only by 2 stations even though the city has 6 major railway junctions.</div>
   </div>
 </div>
 
@@ -341,51 +126,9 @@ p.map-breakdown {
 
   <!-- Leaflet JS -->
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <!-- Navbar Footer JS -->
   <script src="js/include.js"></script>
-
-  <script>
-  const w = 9372;
-  const h = 9959;
-
-  const map = L.map('map', {
-      crs: L.CRS.Simple,
-      attributionControl: false,
-      minZoom: -5,
-      wheelPxPerZoomLevel: 40,
-      zoomControl: false,
-      inertia: true,
-      inertiaDeceleration: 4000,
-      inertiaMaxSpeed: 2000,
-      easeLinearity: 0.5,
-      zoomAnimation: true,
-      markerZoomAnimation: true,
-      fadeAnimation: true
-    });
-
-  const bounds = [[0, 0], [h, w]];
-  L.imageOverlay('images/indian_railways/vandebharat500dpi.png', bounds).addTo(map);
-
-  // Always show full image on load
-  map.fitBounds(bounds);
-
-  // calculate zoom limits based on container
-  const fitZoom = map.getBoundsZoom(bounds, true);  // zoom that fits image exactly
-  map.setMinZoom(fitZoom);                          // stop zooming out past fit
-  map.setMaxZoom(fitZoom + 4);                      // allow zoom in 4 more levels
-  map.fitBounds(bounds);
-
-  // Restrict dragging outside
-  map.setMaxBounds(bounds);
-  map.options.maxBoundsViscosity = 1.0;
-
-  // Add zoom buttons only on the right
-  L.control.zoom({ position: 'topright' }).addTo(map);
-
-  // Re-fit when window resizes
-  window.addEventListener("resize", () => {
-    map.invalidateSize();     // important for Leaflet resize
-    map.fitBounds(bounds);    // keeps image exactly in view
-  });
-</script>
-
+  <!-- Map Panning and Control JS -->
+  <script src="js/vandebharat.js"></script>
+</body>
 </html>
