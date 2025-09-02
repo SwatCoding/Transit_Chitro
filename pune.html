@@ -7,62 +7,12 @@
   <link rel="icon" type="image/png" href="transitchitrofavicon64x64.png">
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/navbar_footer.css" />
+  <link rel="stylesheet" href="css/pune.css" />
   <link rel="stylesheet" href="css/lightbox.min.css" />
-  <style>
-    .svg-container {
-      position: relative;
-      width: 80vmin;
-      aspect-ratio: 1647.44104 / 1182.55896;
-      border: 1px solid #555;
-      margin: 30px auto;
-      overflow: hidden;
-      background: #f9f9f9;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
 
-    #pan-container {
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-      cursor: grab;
-    }
-
-    .controls {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      display: flex;
-      flex-direction: column;
-      gap: 5px;
-      z-index: 10;
-      pointer-events: auto;
-    }
-
-    .controls button {
-      background: #333;
-      color: white;
-      border: none;
-      padding: 5px 8px;
-      font-size: 16px;
-      cursor: pointer;
-      border-radius: 4px;
-    }
-
-    .controls button:hover {
-      background: #555;
-    }
-
-    .paragraph {
-      text-align: center;
-      max-width: 1000px;
-      margin: 20px auto;
-      font-size: 16px;
-      line-height: 1.6;
-    }
-  </style>
-</head>
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  </head>
 
 <body>
   <div class="page-container">
@@ -71,127 +21,79 @@
     <div id="navbar"></div>
 
     <!-- Title and Map -->
-    <main style="text-align: center;">
+    <main>
 
-      <h3>Schematic Map of Pune Metro and Suburban Railway</h3> 
-
-      <div class="svg-container">
-        <div class="controls">
-          <button onclick="zoom(1.1, svgWrapperCenterX(), svgWrapperCenterY())">+</button>
-          <button onclick="zoom(0.9, svgWrapperCenterX(), svgWrapperCenterY())">−</button>
-        </div>
-        <div id="pan-container">
-          <img id="map" src="images/metro/pune500.png" alt="Pune Metro Map" style="max-width:none; transform-origin: 0 0; transform: translate(0px, 0px) scale(1);">
-        </div>
+      <h3>SCHEMATIC MAP OF PUNE METRO AND SUBURBAN RAILWAY</h3>  
+      <div class="map-container">
+        <div id="map"></div>
       </div>
+     
+      <p class="map-breakdown">MAP BREAKDOWN</p>
 
-      <script>
-const panContainer = document.getElementById('pan-container');
-const map = document.getElementById('map');
+      <!-- Eng Label image -->
+       <div class="shape rectangle-eng">
+       <img src="images/others/pune/englabelclip.png" alt="English Label">
+      </div>
+      
+      <p class="caption">-All the lines are colour coded with their numbers.<br>-Suburban Train Number is provided at the first and last stations of the service</p>
 
-let scale = 1;
-let translate = { x: 0, y: 0 };
-let isPanning = false;
-let start = { x: 0, y: 0 };
+      <!-- Hin Label image -->
+       <div class="shape rectangle-hin">
+       <img src="images/others/pune/hinlabelclip.png" alt="Hindi Label">
+      </div>
+      
+      <p class="caption">-All the labels are in Hindi and Marathi apart from English. 
 
-let minScale = 0.5; // will be overwritten with fitScale
-const maxScale = 5;
-
-function clampTranslate() {
-  const containerRect = panContainer.getBoundingClientRect();
-  const imgWidth = map.naturalWidth * scale;
-  const imgHeight = map.naturalHeight * scale;
-
-  const minX = Math.min(0, containerRect.width - imgWidth);
-  const minY = Math.min(0, containerRect.height - imgHeight);
-
-  translate.x = Math.min(Math.max(translate.x, minX), 0);
-  translate.y = Math.min(Math.max(translate.y, minY), 0);
-}
-
-function applyTransform() {
-  clampTranslate();
-  map.style.transform = `translate(${translate.x}px, ${translate.y}px) scale(${scale})`;
-}
-
-function svgWrapperCenterX() {
-  const rect = panContainer.getBoundingClientRect();
-  return rect.left + rect.width / 2;
-}
-
-function svgWrapperCenterY() {
-  const rect = panContainer.getBoundingClientRect();
-  return rect.top + rect.height / 2;
-}
-
-// Smooth mouse-centered zoom
-window.zoom = function (factor, mouseX, mouseY) {
-  const rect = panContainer.getBoundingClientRect();
-  const offsetX = mouseX - rect.left - translate.x;
-  const offsetY = mouseY - rect.top - translate.y;
-
-  const prevScale = scale;
-  scale *= factor;
-  scale = Math.max(minScale, Math.min(maxScale, scale));
-
-  translate.x -= (offsetX / prevScale) * (scale - prevScale);
-  translate.y -= (offsetY / prevScale) * (scale - prevScale);
-
-  applyTransform();
-};
-
-// Calculate initial scale after fitting image
-let fitScale = 1;
-
-window.addEventListener('load', () => {
-  const containerRect = panContainer.getBoundingClientRect();
-  const imgRatio = map.naturalWidth / map.naturalHeight;
-  const containerRatio = containerRect.width / containerRect.height;
-
-  if (imgRatio > containerRatio) {
-    fitScale = containerRect.width / map.naturalWidth;
-  } else {
-    fitScale = containerRect.height / map.naturalHeight;
-  }
-
-  scale = fitScale;
-  minScale = fitScale; // prevent zooming out beyond fit
-  translate.x = (containerRect.width - map.naturalWidth * scale) / 2;
-  translate.y = (containerRect.height - map.naturalHeight * scale) / 2;
-  applyTransform();
-});
-
-// Wheel zoom — smoother
-panContainer.addEventListener('wheel', function (e) {
-  e.preventDefault();
-  const zoomIntensity = 0.0015; // smoother & smaller step
-  const factor = 1 - e.deltaY * zoomIntensity;
-  zoom(factor, e.clientX, e.clientY);
-}, { passive: false });
-
-// Mouse drag panning
-panContainer.addEventListener('mousedown', function (e) {
-  isPanning = true;
-  start = { x: e.clientX - translate.x, y: e.clientY - translate.y };
-  panContainer.style.cursor = 'grabbing';
-});
-
-window.addEventListener('mouseup', function () {
-  isPanning = false;
-  panContainer.style.cursor = 'grab';
-});
-
-window.addEventListener('mousemove', function (e) {
-  if (!isPanning) return;
-  translate.x = e.clientX - start.x;
-  translate.y = e.clientY - start.y;
-  applyTransform();
-});
-</script>
-
-      <!-- Footer -->
-      <div id="footer"></div>
+<!-- Smaller Circles Row -->
+<div class="circles-row">
+  <div class="shape-with-caption">
+    <div class="shape small-circle">
+      <img src="images/others/pune/punejunctionlabel.png" alt="Pune Junction Label">
+    </div>
+    <div class="caption">
+      Pune Junction remains the primary transportation hub with multiple Indian Railways routes converging and the Line 3 Metro represented in Orange.
+    </div>
   </div>
+
+  <div class="shape-with-caption">
+    <div class="shape small-circle">
+      <img src="images/others/pune/shivaji.png" alt="Shivajinagar Station Label">
+    </div>
+    <div class="caption">
+      -Shivajinagar is another major transportation hub with 2 metro lines interchanging with Indian Railways.<br>
+      -Civil Court is the metro hub with 3 metro lines converging together at the station.
+    </div>
+  </div>
+</div> <!--close the small circle row properly -->
+
+
+<!-- Bigger 2 Circles Row -->
+<div class="shapes-row">
+  <div class="shape circle">
+    <img src="images/others/pune/punemetrogeo.png" alt="Pune Metro Geographical Route Map">
+  </div>
+  <div class="shape circle">
+    <img src="images/others/pune/puneschememap1.png" alt="Pune Metro Simplified Map">
+  </div>
+</div>
+
+ <p class="caption">
+  -The geographical routes was identified using Google Maps.<br>
+  -The stations were equally placed alone the lines.
+</p>
+</div>
+
+    </main>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+  </div>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <!-- Navbar Footer JS -->
   <script src="js/include.js"></script>
+  <!-- Map Panning and Control JS -->
+  <script src="js/pune.js"></script>
 </body>
 </html>

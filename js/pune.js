@@ -1,5 +1,5 @@
-const w = 9372; // image width in pixels
-const h = 9959; // image height in pixels
+const w = 1650; // image width in pixels
+const h = 1183; // image height in pixels
 
 window.addEventListener("load", () => {
   const mapEl = document.getElementById("map");
@@ -21,7 +21,7 @@ window.addEventListener("load", () => {
   });
 
   const bounds = [[0, 0], [h, w]];
-  L.imageOverlay("images/indian_railways/vandebharat300dpi.png", bounds).addTo(map);
+  L.imageOverlay("images/metro/pune300.png", bounds).addTo(map);
 
   function refit() {
     map.invalidateSize();
