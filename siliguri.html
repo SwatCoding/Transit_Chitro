@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Transit Chitro</title>
+  <link rel="icon" type="image/png" href="transitchitrofavicon64x64.png">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/navbar_footer.css" />
+  <link rel="stylesheet" href="css/siliguri.css" />
+  <link rel="stylesheet" href="css/lightbox.min.css" />
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  </head>
+
+<body>
+  <div class="page-container">
+
+    <!-- Navbar -->
+    <div id="navbar"></div>
+
+    <!-- Title and Map -->
+    <main>
+
+      <h3>SPECULATIVE MAP OF SILIGURI METRO AND ROPEWAY</h3>  
+      <div class="map-container">
+        <div id="map"></div>
+      </div>
+     
+      <p class="map-breakdown">MAP BREAKDOWN</p>
+      
+      <p class="caption">This is a speculative Map of a Metro System for the city of Siliguri. <br>It does not represents any real plans or proposals from any official authority.</p>
+
+      <!-- Eng Label image -->
+       <div class="shape rectangle-ben">
+       <img src="images/others/siliguri/bengalilabels.png" alt="Bengali Labels">
+      </div>
+      
+      <p class="caption">-The Map features the possible interchanges with the Indian Railways.<br>-Major Inter-state Bus terminals is also featured.</p>
+
+      <!-- Hin Label image -->
+       <div class="shape rectangle-nep">
+       <img src="images/others/siliguri/nepalilabels.png" alt="Nepali Labels">
+      </div>
+      
+      <p class="caption">-All the labels are in English, Bengali and Nepali.
+
+<!-- Smaller Circles Row -->
+<div class="circles-row">
+  <div class="shape-with-caption">
+    <div class="shape small-circle">
+      <img src="images/others/siliguri/njpclip.png" alt="New Jalpaiguri Junction Label">
+    </div>
+    <div class="caption">
+      New Jalpaiguri Junction remains the primary transportation hub with multiple Indian Railways routes converging and two speculated metro lines.
+    </div>
+  </div>
+
+  <div class="shape-with-caption">
+    <div class="shape small-circle">
+      <img src="images/others/siliguri/bagdograclip.png" alt="Bagdogra Airport Label">
+    </div>
+    <div class="caption">
+      -Bagdogra Airport is another major transportation hub with two metro lines converging at the airport.<br>
+      -Bagdogra station can provide interchange with the Indian Railways Siliguri Junction Aluabari Road Junction Line.
+    </div>
+  </div>
+</div> <!--close the small circle row properly -->
+
+
+<!-- Bigger 2 Circles Row -->
+<div class="shapes-row">
+  <div class="shape circle">
+    <img src="images/others/siliguri/geoclip.png" alt="Siliguri Metro Geographical Route Map">
+  </div>
+  <div class="shape circle">
+    <img src="images/others/siliguri/metromapclip.png" alt="Siliguri Metro Simplified Map">
+  </div>
+</div>
+
+ <p class="caption">
+  -The geographical routes was identified using Google Maps.<br>
+  -The stations were equally placed alone the lines.
+</p>
+</div>
+
+    </main>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+  </div>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <!-- Navbar Footer JS -->
+  <script src="js/include.js"></script>
+  <!-- Map Panning and Control JS -->
+  <script src="js/siliguri.js"></script>
+</body>
+</html>
