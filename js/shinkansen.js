@@ -21,7 +21,7 @@ window.addEventListener("load", () => {
   });
 
   const bounds = [[0, 0], [h, w]];
-  L.imageOverlay("images/hsr/.png", bounds).addTo(map);
+  L.imageOverlay("images/hsr/shinkansen300dpi.png", bounds).addTo(map);
 
   function refit() {
     map.invalidateSize();
