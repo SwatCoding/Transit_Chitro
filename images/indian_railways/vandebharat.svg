@@ -43,9 +43,9 @@
      inkscape:snap-center="true"
      inkscape:snap-text-baseline="true"
      inkscape:snap-page="true"
-     inkscape:zoom="0.22627417"
-     inkscape:cx="1542.3767"
-     inkscape:cy="1186.6136"
+     inkscape:zoom="1.8101934"
+     inkscape:cx="1479.4"
+     inkscape:cy="1434.9296"
      inkscape:window-width="1920"
      inkscape:window-height="991"
      inkscape:window-x="-9"
@@ -57,6 +57,11 @@
      borderlayer="true" />
   <defs
      id="defs2">
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4858"
+       is_visible="true"
+       lpeversion="1" />
     <inkscape:path-effect
        effect="bspline"
        id="path-effect134502"
@@ -10550,6 +10555,103 @@
      id="layer9"
      inkscape:label="bg"
      style="display:inline">
+    <rect
+       style="display:inline;fill:#6164b0;fill-opacity:1;stroke:none;stroke-width:3.45813;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       id="rect112432-8"
+       width="3.3587723"
+       height="10.208854"
+       x="1451.8026"
+       y="-1491.0914"
+       transform="rotate(90)"
+       inkscape:export-filename="C:\Users\SWATTIK\Desktop\Transit_Chitro\images\indian_railways\vandebharat300dpi.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <rect
+       style="display:inline;fill:#db9f4d;fill-opacity:1;stroke:none;stroke-width:3.45813;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       id="rect112432-8-7"
+       width="3.3587723"
+       height="10.208854"
+       x="-1468.8036"
+       y="-1455.1681"
+       transform="scale(-1)"
+       inkscape:export-filename="C:\Users\SWATTIK\Desktop\Transit_Chitro\images\indian_railways\vandebharat300dpi.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="display:inline;fill:none;stroke:#db9f4d;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 1498.2304,1466.3446 c 26.7165,0 53.4321,0 80.1468,0"
+       id="path20659"
+       inkscape:path-effect="#path-effect20663"
+       inkscape:original-d="m 1498.2304,1466.3446 c 26.7165,0 53.4321,0 80.1468,0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="C:\Users\SWATTIK\Desktop\Transit_Chitro\images\indian_railways\vandebharat300dpi.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="display:inline;fill:none;stroke:#009fb0;stroke-width:4.0134;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 1491.9738,1572.3446 v -100"
+       id="path18975"
+       inkscape:path-effect="#path-effect18977"
+       inkscape:original-d="m 1491.9738,1572.3446 c 10e-4,-33.3323 10e-4,-66.6657 0,-100"
+       inkscape:export-filename="C:\Users\SWATTIK\Desktop\Transit_Chitro\images\indian_railways\vandebharat300dpi.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="display:inline;fill:none;stroke:#009fb0;stroke-width:4.0134;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 1485.987,1572.3446 v -100"
+       id="path19059"
+       inkscape:path-effect="#path-effect19063"
+       inkscape:original-d="m 1485.987,1572.3446 c 10e-4,-33.3323 10e-4,-66.6657 0,-100"
+       inkscape:export-filename="C:\Users\SWATTIK\Desktop\Transit_Chitro\images\indian_railways\vandebharat300dpi.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="display:inline;fill:none;stroke:#2fa32f;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:path-effect="#path-effect29760"
+       inkscape:original-d="m 1644.7744,1460.4583 c 0,0 -97.6958,5e-4 -146.5441,-7e-4"
+       d="m 1644.7744,1460.4583 c -48.848,-2e-4 -97.6958,-5e-4 -146.5441,-7e-4"
+       id="path109269"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="C:\Users\SWATTIK\Desktop\Transit_Chitro\images\indian_railways\vandebharat300dpi.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="display:inline;fill:none;stroke:#6164b0;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 1485.987,1392.5743 c 0,20.3036 0,40.6061 0,60.9076"
+       id="path9912"
+       inkscape:path-effect="#path-effect9914"
+       inkscape:original-d="m 1485.987,1392.5743 c 10e-4,20.3036 10e-4,40.6061 0,60.9076"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="C:\Users\SWATTIK\Desktop\Transit_Chitro\images\indian_railways\vandebharat300dpi.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="display:inline;fill:none;stroke:#db9f4d;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 1479.9862,1438.881 c 0,2.1846 0,4.3665 -0.7722,6.2308 -0.7722,1.8643 -2.3162,3.4082 -4.18,4.18 -1.8639,0.7718 -4.0478,0.7718 -6.2304,0.7718"
+       id="path133932-7-9-39"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="C:\Users\SWATTIK\Desktop\Transit_Chitro\images\indian_railways\vandebharat300dpi.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="display:inline;fill:none;stroke:#db9f4d;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 1341.2126,1455.1614 c 2e-4,2.0009 5e-4,4.0009 6e-4,6.0927 10e-5,2.0918 10e-5,4.2737 0.7723,6.138 0.7722,1.8643 2.3162,3.4082 4.18,4.18 1.8639,0.7718 4.0478,0.7718 8.6395,0.7718 4.5917,0 11.5914,0 32.8279,0 21.2364,0 56.7081,0 92.1795,0"
+       id="path133932-7-9"
+       sodipodi:nodetypes="ccccccc"
+       inkscape:original-d="m 1341.2126,1455.1614 c 0,2.0009 0,4.0009 7e-4,5.9999 0,2.1846 4e-4,4.3665 0,6.5506 1.5441,1.5448 3.0881,3.0887 4.6319,4.632 2.1842,4e-4 4.3681,10e-4 6.5506,0 7.0009,10e-4 14.0006,10e-4 20.9993,0 35.4742,10e-4 70.9459,10e-4 106.4173,0"
+       inkscape:path-effect="#path-effect34338"
+       inkscape:export-filename="C:\Users\SWATTIK\Desktop\Transit_Chitro\images\indian_railways\vandebharat300dpi.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <rect
+       style="opacity:0.5;fill:#646464;stroke:none;stroke-width:1.08515;stroke-linecap:round;paint-order:markers stroke fill;fill-opacity:1"
+       id="rect5042"
+       width="43.987541"
+       height="41.382362"
+       x="1461.9933"
+       y="1441.712"
+       rx="4.6875"
+       ry="4.6875" />
     <path
        style="fill:none;stroke:#db9f4d;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 1650.2259,1409.3308 c 30.9239,0 61.8472,0 92.7691,0"
@@ -11370,16 +11472,6 @@
        inkscape:export-ydpi="300" />
     <path
        style="display:inline;fill:none;stroke:#db9f4d;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 1341.2126,1455.1614 c 2e-4,2.0009 5e-4,4.0009 6e-4,6.0927 10e-5,2.0918 10e-5,4.2737 0.7723,6.138 0.7722,1.8643 2.3162,3.4082 4.18,4.18 1.8639,0.7718 4.0478,0.7718 8.6395,0.7718 4.5917,0 11.5914,0 32.8279,0 21.2364,0 56.7081,0 92.1795,0"
-       id="path133932-7-9"
-       sodipodi:nodetypes="ccccccc"
-       inkscape:original-d="m 1341.2126,1455.1614 c 0,2.0009 0,4.0009 7e-4,5.9999 0,2.1846 4e-4,4.3665 0,6.5506 1.5441,1.5448 3.0881,3.0887 4.6319,4.632 2.1842,4e-4 4.3681,10e-4 6.5506,0 7.0009,10e-4 14.0006,10e-4 20.9993,0 35.4742,10e-4 70.9459,10e-4 106.4173,0"
-       inkscape:path-effect="#path-effect34338"
-       inkscape:export-filename="C:\Users\SWATTIK\Desktop\Transit_Chitro\images\indian_railways\vandebharat300dpi.png"
-       inkscape:export-xdpi="300"
-       inkscape:export-ydpi="300" />
-    <path
-       style="display:inline;fill:none;stroke:#db9f4d;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 1341.2126,1355.1614 c 0,-2.1846 0,-4.3665 -0.7722,-6.2308 -0.7722,-1.8642 -2.3162,-3.4082 -4.18,-4.18 -1.8639,-0.7718 -4.0478,-0.7718 -6.2303,-0.7718"
        id="path133932-7-9-1"
        sodipodi:nodetypes="cccc"
@@ -11470,16 +11562,6 @@
        sodipodi:nodetypes="ccc"
        inkscape:original-d="m 1951.3848,1314.5473 c 8.3351,10e-4 16.6684,10e-4 25,0 5.8931,5.8945 11.7856,11.7871 17.6777,17.6777"
        inkscape:path-effect="#path-effect97016"
-       inkscape:export-filename="C:\Users\SWATTIK\Desktop\Transit_Chitro\images\indian_railways\vandebharat300dpi.png"
-       inkscape:export-xdpi="300"
-       inkscape:export-ydpi="300" />
-    <path
-       style="display:inline;fill:none;stroke:#db9f4d;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 1498.2304,1466.3446 c 26.7165,0 53.4321,0 80.1468,0"
-       id="path20659"
-       inkscape:path-effect="#path-effect20663"
-       inkscape:original-d="m 1498.2304,1466.3446 c 26.7165,0 53.4321,0 80.1468,0"
-       sodipodi:nodetypes="cc"
        inkscape:export-filename="C:\Users\SWATTIK\Desktop\Transit_Chitro\images\indian_railways\vandebharat300dpi.png"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300" />
@@ -11622,24 +11704,6 @@
        id="path13256"
        inkscape:path-effect="#path-effect13258"
        inkscape:original-d="m 1642.685,1631.3156 c 10e-4,-4.2906 10e-4,-8.5823 0,-12.8749"
-       inkscape:export-filename="C:\Users\SWATTIK\Desktop\Transit_Chitro\images\indian_railways\vandebharat300dpi.png"
-       inkscape:export-xdpi="300"
-       inkscape:export-ydpi="300" />
-    <path
-       style="display:inline;fill:none;stroke:#009fb0;stroke-width:4.0134;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 1491.9738,1572.3446 v -100"
-       id="path18975"
-       inkscape:path-effect="#path-effect18977"
-       inkscape:original-d="m 1491.9738,1572.3446 c 10e-4,-33.3323 10e-4,-66.6657 0,-100"
-       inkscape:export-filename="C:\Users\SWATTIK\Desktop\Transit_Chitro\images\indian_railways\vandebharat300dpi.png"
-       inkscape:export-xdpi="300"
-       inkscape:export-ydpi="300" />
-    <path
-       style="display:inline;fill:none;stroke:#009fb0;stroke-width:4.0134;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 1485.987,1572.3446 v -100"
-       id="path19059"
-       inkscape:path-effect="#path-effect19063"
-       inkscape:original-d="m 1485.987,1572.3446 c 10e-4,-33.3323 10e-4,-66.6657 0,-100"
        inkscape:export-filename="C:\Users\SWATTIK\Desktop\Transit_Chitro\images\indian_railways\vandebharat300dpi.png"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300" />
@@ -11906,16 +11970,6 @@
     <path
        style="display:inline;fill:none;stroke:#2fa32f;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        inkscape:path-effect="#path-effect29760"
-       inkscape:original-d="m 1644.7744,1460.4583 c 0,0 -97.6958,5e-4 -146.5441,-7e-4"
-       d="m 1644.7744,1460.4583 c -48.848,-2e-4 -97.6958,-5e-4 -146.5441,-7e-4"
-       id="path109269"
-       sodipodi:nodetypes="cc"
-       inkscape:export-filename="C:\Users\SWATTIK\Desktop\Transit_Chitro\images\indian_railways\vandebharat300dpi.png"
-       inkscape:export-xdpi="300"
-       inkscape:export-ydpi="300" />
-    <path
-       style="display:inline;fill:none;stroke:#2fa32f;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       inkscape:path-effect="#path-effect29760"
        inkscape:original-d="m 1655.9571,1449.2757 c 0,0 0,-15.1742 5e-4,-22.7623"
        d="m 1655.9571,1449.2757 c 2e-4,-7.5874 3e-4,-15.1742 5e-4,-22.7623"
        id="path109267"
@@ -12173,16 +12227,6 @@
        id="path9908"
        inkscape:path-effect="#path-effect9910"
        inkscape:original-d="m 1510.199,1334.1214 c 10e-4,-22.6271 10e-4,-45.2553 0,-67.8844"
-       sodipodi:nodetypes="cc"
-       inkscape:export-filename="C:\Users\SWATTIK\Desktop\Transit_Chitro\images\indian_railways\vandebharat300dpi.png"
-       inkscape:export-xdpi="300"
-       inkscape:export-ydpi="300" />
-    <path
-       style="display:inline;fill:none;stroke:#6164b0;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 1485.987,1392.5743 c 0,20.3036 0,40.6061 0,60.9076"
-       id="path9912"
-       inkscape:path-effect="#path-effect9914"
-       inkscape:original-d="m 1485.987,1392.5743 c 10e-4,20.3036 10e-4,40.6061 0,60.9076"
        sodipodi:nodetypes="cc"
        inkscape:export-filename="C:\Users\SWATTIK\Desktop\Transit_Chitro\images\indian_railways\vandebharat300dpi.png"
        inkscape:export-xdpi="300"
@@ -14770,15 +14814,6 @@
        cx="2315.9761"
        cy="1438.1946"
        r="14.18633"
-       inkscape:export-filename="C:\Users\SWATTIK\Desktop\Transit_Chitro\images\indian_railways\vandebharat300dpi.png"
-       inkscape:export-xdpi="300"
-       inkscape:export-ydpi="300" />
-    <circle
-       style="display:inline;opacity:0.3;fill:#646464;fill-opacity:1;stroke:none;stroke-width:4;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
-       id="path15546"
-       cx="1488.9808"
-       cy="1466.0945"
-       r="17"
        inkscape:export-filename="C:\Users\SWATTIK\Desktop\Transit_Chitro\images\indian_railways\vandebharat300dpi.png"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300" />
@@ -20335,28 +20370,6 @@
        height="10.208854"
        x="1727.6615"
        y="1523.7615"
-       inkscape:export-filename="C:\Users\SWATTIK\Desktop\Transit_Chitro\images\indian_railways\vandebharat300dpi.png"
-       inkscape:export-xdpi="300"
-       inkscape:export-ydpi="300" />
-    <rect
-       style="display:inline;fill:#6164b0;fill-opacity:1;stroke:none;stroke-width:3.45813;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
-       id="rect112432-8"
-       width="3.3587723"
-       height="10.208854"
-       x="1451.8026"
-       y="-1491.0914"
-       transform="rotate(90)"
-       inkscape:export-filename="C:\Users\SWATTIK\Desktop\Transit_Chitro\images\indian_railways\vandebharat300dpi.png"
-       inkscape:export-xdpi="300"
-       inkscape:export-ydpi="300" />
-    <rect
-       style="display:inline;fill:#db9f4d;fill-opacity:1;stroke:none;stroke-width:3.45813;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
-       id="rect112432-8-7"
-       width="3.3587723"
-       height="10.208854"
-       x="-1468.8036"
-       y="-1455.1681"
-       transform="scale(-1)"
        inkscape:export-filename="C:\Users\SWATTIK\Desktop\Transit_Chitro\images\indian_railways\vandebharat300dpi.png"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300" />
@@ -30440,14 +30453,6 @@
          y="1447.671"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:13.3333px;font-family:Arial;-inkscape-font-specification:'Arial, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:end;text-anchor:end"
          id="tspan84196">JUNCTION</tspan></text>
-    <path
-       style="display:inline;fill:none;stroke:#db9f4d;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 1479.9862,1438.881 c 0,2.1846 0,4.3665 -0.7722,6.2308 -0.7722,1.8643 -2.3162,3.4082 -4.18,4.18 -1.8639,0.7718 -4.0478,0.7718 -6.2304,0.7718"
-       id="path133932-7-9-39"
-       sodipodi:nodetypes="cccc"
-       inkscape:export-filename="C:\Users\SWATTIK\Desktop\Transit_Chitro\images\indian_railways\vandebharat300dpi.png"
-       inkscape:export-xdpi="300"
-       inkscape:export-ydpi="300" />
     <path
        style="display:inline;fill:none;stroke:#2fa32f;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 1655.9571,1449.2757 c 0,2.1846 0,4.3665 -0.7722,6.2308 -0.7723,1.8643 -2.3163,3.4082 -4.1801,4.18 -1.8638,0.7718 -4.0477,0.7718 -6.2304,0.7718"
