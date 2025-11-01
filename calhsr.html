@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Transit Chitro</title>
+  <link rel="icon" type="image/png" href="transitchitrofavicon64x64.png">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/navbar_footer.css" />
+  <link rel="stylesheet" href="css/calhsr.css" />
+  <link rel="stylesheet" href="css/lightbox.min.css" />
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  </head>
+
+<body>
+  <div class="page-container">
+
+    <!-- Navbar -->
+    <div id="navbar"></div>
+
+    <!-- Title and Map -->
+    <main>
+
+      <h3>MAP OF CALIFORNIA HIGH SPEED RAIL AND BRIGHTLINE WEST</h3>  
+      <div class="map-container">
+        <div id="map"></div>
+      </div>
+     
+      <p class="map-breakdown">MAP BREAKDOWN</p>
+
+      <!-- Parent container -->
+<div class="label-container">
+  <!-- Eng Label image -->
+  <div class="shape rectangle-label">
+    <img src="images/others/calhsr/englabel.png" alt="English Labels">
+  </div>
+
+  <!-- Jap Label image -->
+  <div class="shape rectangle-label">
+    <img src="images/others/calhsr/spalabel.png" alt="Spanish Labels">
+  </div>
+</div>
+      
+      <p class="caption">-All the labels are in English and Spanish.
+
+
+<!-- Smaller Circles Row -->
+<div class="circles-row">
+  <div class="shape-with-caption">
+    <div class="shape small-circle">
+      <img src="images/others/calhsr/sfmetroarea.png" alt="Greater San Francisco Area">
+    </div>
+    <div class="caption">
+      -San Francisco Bay Area is the 5th most populous urban area in the US. <br>
+      -San Francisco 4th and King Street Station is the primary railhead of San Francisco.
+    </div>
+  </div>
+
+  <div class="shape-with-caption">
+    <div class="shape small-circle">
+      <img src="images/others/calhsr/lametroarea.png" alt="Greater Los Angeles Area">
+    </div>
+    <div class="caption">
+      -Greater Los Angeles area includes the cities of Los Angeles, Long Beach, Orange County, Anaheim,San Bernardino and others.<br>
+      -Greater Los Angeles area is the second largest metropolitan area after New York City in the United States.
+    </div>
+  </div>
+</div> <!--close the small circle row properly -->
+
+
+<!-- Bigger 2 Circles Row -->
+<div class="shapes-row">
+  <div class="shape circle">
+    <img src="images/others/calhsr/brightlinewestgeomap.png" alt="Geographical Route Map of California HIgh Speed Rail and Brightline West">
+  </div>
+  <div class="shape circle">
+    <img src="images/others/calhsr/brightlinewest.png" alt="Simplified Map of California HIgh Speed Rail and Brightline West">
+  </div>
+</div>
+
+ <p class="caption">
+  -The geographical routes was identified using Google Maps.<br>
+  -The stations were equally placed alone the lines.
+</p>
+</div>
+
+    </main>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+  </div>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <!-- Navbar Footer JS -->
+  <script src="js/include.js"></script>
+  <!-- Map Panning and Control JS -->
+  <script src="js/calhsr.js"></script>
+</body>
+</html>

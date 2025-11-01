@@ -1,0 +1,209 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+h3 {
+  margin: 20px 0;
+  text-align: center;
+  font-weight: normal;
+}
+
+.page-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Map container with fixed aspect ratio math */
+.map-container {
+  width: min(90vw, 90vh * 1200 / 1600);
+  height: calc(min(90vw, 90vh * 1200 / 1600) * 1600 / 1200); /* derive height */
+  border: 1px solid #555;
+  margin: 10px auto 50px auto;
+  position: relative;
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+}
+
+/* Default cursor for map: grab/move */
+#map,
+#map * {
+  cursor: move !important;
+}
+
+/* But when hovering zoom controls: default arrow */
+#map .leaflet-control-zoom,
+#map .leaflet-control-zoom *,
+#map .leaflet-control-container,
+#map .leaflet-control-container * {
+  cursor: default !important;
+}
+
+/* === Shapes and Captions (below map) === */
+.shape {
+  background: #ddd; /* fallback if no image */
+  margin: 10px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Rectangle */
+
+.label-container {
+  display: flex;         /* puts children side by side */
+  gap: 20px;             /* space between them (adjust as needed) */
+  justify-content: center; /* center them horizontally in parent */
+  align-items: center;     /* vertically align them if heights differ */
+}
+
+.rectangle-label {
+  border-radius: 20px;
+  width: 180px; /* your scaled width */
+  aspect-ratio: 322 / 216;
+  overflow: hidden; /* ensures img doesn’t spill out */
+}
+
+.rectangle-label img {
+  width: 100%;  /* makes image fill the rectangle */
+  height: 100%; /* keeps aspect ratio since parent sets aspect-ratio */
+  object-fit: cover; /* crops nicely if needed */
+}
+
+
+/* Bigger 2 Circles */
+.circle {
+  width: 500px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+}
+
+/* Smaller circles row */
+.small-circle {
+  width: 400px;
+  height: 400px;       /* ensure perfect circle */
+  gap: 100px;
+  border-radius: 50%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+}
+
+.circles-row {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 50px; /* give space below */
+}
+
+/* Shape + Caption container */
+.shape-with-caption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 500px;
+  text-align: center;
+}
+
+.shape-with-caption .caption {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  line-height: 1.3;
+}
+
+/* Images inside shapes */
+.shape img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 1px solid grey;
+  border-radius: inherit; /* rectangle stays rounded, circle stays round */
+}
+
+/* Circles row with big spacing */
+.shapes-row {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+
+.caption {
+  margin: 20px 0 50px 0;
+  font-size: 1rem;
+  text-align: left;
+  max-width: 500px;
+}
+
+/* Map Breakdown Title */
+p.map-breakdown {
+  font-weight: normal;
+  font-size: 24px;
+  margin: 0 0 20px 0;
+  text-align: center;
+}
+
+/* === Mobile Responsive Overrides === */
+@media (max-width: 768px) {
+  /* Map shrinks to screen */
+  .map-container {
+    width: 95vw;
+    height: auto;
+    aspect-ratio: 1200 / 1600;
+  }
+  
+   .shapes-row {
+   flex-direction: column;   /* stack vertically */
+   align-items: center;      /* center them */
+   gap: 20px;                /* smaller gap for vertical stacking */
+  }
+
+  /* Circles shrink */
+  .circle {
+    width: 70vw;
+    max-width: 250px;
+    height: auto;
+  }
+  
+  .small-circle {
+    width: 40vw;
+    max-width: 150px;
+    height: auto;
+  }
+
+  /* Captions aligned with rectangles */
+  .shape-with-caption .caption-blr,
+  .shape-with-caption .caption-hyd {
+    transform: translateX(-8vw);
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  /* Text size smaller */
+  h3 {
+    font-size: 1.2rem;
+    padding: 0 10px;
+  }
+
+  .caption {
+    font-size: 0.85rem;
+    text-align: center;
+  }
+}
