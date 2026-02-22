@@ -8,10 +8,10 @@
    version="1.1"
    id="svg5"
    inkscape:version="1.1 (c68e22c387, 2021-05-23)"
-   sodipodi:docname="vandebharat.svg"
-   inkscape:export-filename="C:\Users\SWATTIK\Desktop\Transit_Chitro\images\indian_railways\vandebharat500dpi.png"
-   inkscape:export-xdpi="500"
-   inkscape:export-ydpi="500"
+   sodipodi:docname="vandebharat.svg.2026_02_23_01_55_11.0.svg"
+   inkscape:export-filename="C:\Users\SWATTIK\Desktop\Transit_Chitro\images\indian_railways\vandebharat20dpi.png"
+   inkscape:export-xdpi="20"
+   inkscape:export-ydpi="20"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -43,9 +43,9 @@
      inkscape:snap-center="true"
      inkscape:snap-text-baseline="true"
      inkscape:snap-page="true"
-     inkscape:zoom="0.57057295"
-     inkscape:cx="992.86165"
-     inkscape:cy="1487.1017"
+     inkscape:zoom="4.5645836"
+     inkscape:cx="793.17202"
+     inkscape:cy="744.5367"
      inkscape:window-width="1920"
      inkscape:window-height="991"
      inkscape:window-x="-9"
@@ -55,7 +55,32 @@
      inkscape:lockguides="false"
      inkscape:snap-global="true"
      borderlayer="true"
-     inkscape:snap-nodes="true" />
+     inkscape:snap-nodes="true">
+    <sodipodi:guide
+       position="765.25645,2378.0484"
+       orientation="0,-1"
+       id="guide37659" />
+    <sodipodi:guide
+       position="741.48486,2503.0484"
+       orientation="0,-1"
+       id="guide38272" />
+    <sodipodi:guide
+       position="604.87446,2419.7152"
+       orientation="0,-1"
+       id="guide43067" />
+    <sodipodi:guide
+       position="604.58578,2461.3818"
+       orientation="0,-1"
+       id="guide43274" />
+    <sodipodi:guide
+       position="747.48485,2454.6174"
+       orientation="1,0"
+       id="guide43395" />
+    <sodipodi:guide
+       position="754.4848,2423.3529"
+       orientation="1,0"
+       id="guide43645" />
+  </sodipodi:namedview>
   <defs
      id="defs2">
     <inkscape:path-effect
@@ -11592,7 +11617,7 @@
        inkscape:export-ydpi="300" />
     <path
        style="display:inline;fill:#c8c8c8;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 435.63538,397.9136 v 0 l 2e-5,-18.4613 h 2562.9521 v 704.4753 h -138.4699 v 222.7128 h -147.0867 v -52 h -55.4945 v -163 h -94.1488 l -62.3678,62.3679 h -306.0835 l -64.4884,-64.4884 h -178.9625 v 60.1687 h -85.4489 v 71.9518 h -56.875 -162.9121 l -96.8158,-96.8157 h -179.0748 l -137.7311,-137.024 -37.6888,37.6888 -217.43014,-217.4301 22.39915,-22.39922 49.40809,49.40802 49.4269,-49.42691 -49.4269,-49.42695 V 634.3904 L 1168.5664,515.14 V 474.82318 H 1024.1521 L 939.2727,559.70254 777.48376,397.9136 Z"
+       d="m 405.13478,397.82006 v 0 l 2e-5,-18.4613 H 2968.0869 V 1083.8341 H 2829.617 v 222.7128 h -147.0867 v -52 h -55.4945 v -163 h -94.1488 l -62.3678,62.3679 h -306.0835 l -64.4884,-64.4884 h -178.9625 v 60.1687 h -85.4489 v 71.9518 h -56.875 -162.9121 l -96.8158,-96.8157 h -179.0748 l -137.7311,-137.02404 -37.6888,37.68884 -217.43014,-217.43014 22.39915,-22.39922 49.40809,49.40802 49.4269,-49.42691 -49.4269,-49.42695 V 634.29686 l 119.2504,-119.2504 V 474.72964 H 993.65151 L 908.7721,559.609 746.98316,397.82006 Z"
        id="path38591"
        inkscape:export-filename="C:\Users\SWATTIK\Desktop\Transit_Chitro\images\indian_railways\vandebharat300dpi.png"
        inkscape:export-xdpi="300"
@@ -27268,21 +27293,21 @@
     <text
        xml:space="preserve"
        style="font-weight:bold;font-size:6.66667px;line-height:1;font-family:Arial;-inkscape-font-specification:'Arial, Bold';text-align:center;text-anchor:middle;display:inline;fill:#0064b0;fill-opacity:1;stroke-width:0.0800511"
-       x="-991.68317"
-       y="774.61963"
+       x="-1008.7586"
+       y="779.27966"
        id="text211209-2-7-0"
        transform="rotate(-90)"
        inkscape:export-filename="C:\Users\SWATTIK\Desktop\Transit_Chitro\images\indian_railways\vandebharat300dpi.png"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300"><tspan
          sodipodi:role="line"
-         x="-991.68317"
-         y="774.61963"
+         x="-1008.7586"
+         y="779.27966"
          style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:condensed;font-size:6.66667px;font-family:'Bodoni MT';-inkscape-font-specification:'Bodoni MT, Italic Condensed';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#0064b0;fill-opacity:1;stroke-width:0.0800511"
          id="tspan211207-3-1-7">SMVD Katra–New Delhi</tspan><tspan
          sodipodi:role="line"
-         x="-991.68317"
-         y="781.44373"
+         x="-1008.7586"
+         y="786.10376"
          style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:condensed;font-size:6.66667px;font-family:'Bodoni MT';-inkscape-font-specification:'Bodoni MT, Italic Condensed';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#0064b0;fill-opacity:1;stroke-width:0.0800511"
          id="tspan221277-5-0">22478/22477</tspan></text>
     <text
@@ -32478,7 +32503,7 @@
          id="tspan31871" /></text>
     <path
        style="display:inline;fill:#194465;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="M -8.3e-7,379.45236 V 3186.8069 H 2999.0875 V 379.45216 h -30 l -0.4994,2777.35474 H 31.001 V 379.45236 Z"
+       d="M -30.500591,379.35886 V 3186.7134 H 2968.5869 V 379.35866 h -30 l -0.4994,2777.35474 H 0.50040983 V 379.35886 Z"
        id="path39900"
        inkscape:export-filename="C:\Users\SWATTIK\Desktop\Transit_Chitro\images\indian_railways\vandebharat300dpi.png"
        inkscape:export-xdpi="300"
