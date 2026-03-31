@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Transit Chitro</title>
+  <link rel="icon" type="image/png" href="transitchitrofavicon64x64.png">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/navbar_footer.css" />
+  <link rel="stylesheet" href="css/pune.css" />
+  <link rel="stylesheet" href="css/lightbox.min.css" />
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  </head>
+
+<body>
+  <div class="page-container">
+
+    <!-- Navbar -->
+    <div id="navbar"></div>
+
+    <!-- Title and Map -->
+    <main>
+
+      <h3>SPECULATIVE MAP OF KOLKATA REGIONAL RAPID TRANSIT SYSTEM (RRTS) AND ASANSOL-DURGAPUR METRO</h3>  
+      <div class="map-container">
+        <div id="map"></div>
+      </div>
+     
+      <p class="map-breakdown">MAP BREAKDOWN</p>
+
+      <!-- Eng Label image -->
+       <div class="shape rectangle-eng">
+       <img src="images/others/kolrrts/labelclip.png" alt="Label">
+      </div>
+      
+      <p class="caption">-All the lines are colour coded with their Logos.<br>-All Labels are in English and Bengali, with the station names on the map in hindi too</p>
+
+
+<!-- Smaller Circles Row -->
+<div class="circles-row">
+  <div class="shape-with-caption">
+    <div class="shape small-circle">
+      <img src="images/others/kolrrts/esplanade.png" alt="Esplanade Station Label">
+    </div>
+    <div class="caption">
+      Esaplande is the origin of 6 RRTS Line .
+    </div>
+  </div>
+
+  <div class="shape-with-caption">
+    <div class="shape small-circle">
+      <img src="images/others/kolrrts/asandgpmetro.png" alt="Asansol Durgapur Metro Label">
+    </div>
+    <div class="caption">
+      -The Asansol Durgapur RRTS runs parallel to The Esplanade Asansol RRTS from Bidhannagar Durgapur to Burnpur.<br>
+      -The Asansol Durgapur Metro is roughly 60 kms connecting Asansol, Burnpur, Raniganj, Durgapur Airport and Durgapur.
+    </div>
+  </div>
+</div> <!--close the small circle row properly -->
+
+
+<!-- Bigger 2 Circles Row -->
+<div class="shapes-row">
+  <div class="shape circle">
+    <img src="images/others/kolrrts/geoclip.png" alt="Pune Metro Geographical Route Map">
+  </div>
+  <div class="shape circle">
+    <img src="images/others/kolrrts/esplanadeclip.png" alt="Esplanade Simplified Map">
+  </div>
+</div>
+
+ <p class="caption">
+  -The geographical routes was identified using Google Maps.<br>
+  -The stations were equally placed alone the lines.
+</p>
+</div>
+
+    </main>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+  </div>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <!-- Navbar Footer JS -->
+  <script src="js/include.js"></script>
+  <!-- Map Panning and Control JS -->
+  <script src="js/kolrrts
+.js"></script>
+</body>
+</html>
